@@ -2,7 +2,7 @@
 {% block content %}
     <h3>Edit Your Five!</h3>
     <div class="row">
-        <form action="{{ url_for('insert_task') }}" method="POST" class="col s12">
+        <form action="{{ url_for('update_task', task_id=task._id) }}" method="POST" class="col s12">
             <div class=row">
                 <div class="row">
                         <div class="input-field col s12">
@@ -10,7 +10,11 @@
                             <select id="category" name="category_name">
                                 <option value="" disabled selected>Choose Category</option>
                                 {% for cat in categories %}
-                                <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                                    {% if cat.category_name == task.category_name %}
+                                    <option value="{{cat.category_name}}" selected >{{cat.category_name}}</option>
+                                    {% else %}
+                                    <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                                    {% endif %}
                                 {% endfor %}
                             </select>
                             <label>Category</label>
@@ -19,14 +23,14 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="material-icons prefix">face</i>
-                    <input id="task_name" name="task_name" type="text" class="validate">
+                    <input id="task_name" name="task_name" type="text" class="validate" value="{{task.task_name}}">
                     <label for="icon_prefix">My Fav Five</label>
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
                 <i class="material-icons prefix">create</i>
-                <textarea name="task_description" id="task_description" class="materialize-textarea"></textarea>
+                <textarea name="task_description" id="task_description" class="materialize-textarea">{{task.task_description}}</textarea>
                 <label for="icon_telephone">Add your 5 here</label>
                 </div>
             </div> 
