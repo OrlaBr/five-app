@@ -5,7 +5,7 @@ if path.exists("env.py"):
     import env
 
 
-from flask import Flask
+from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
@@ -18,8 +18,9 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
+@app.route('/get_tasks')
 def hello():
-    return 'Hello World...again'
+    return render_template("tasks.html", tasks=mongo.db.tasks.find())
 
 
 if __name__ == '__main__':
