@@ -36,6 +36,9 @@ def insert_task():
     return redirect(url_for('get_tasks'))
 
 
+@app.route('/edit_task/<task_id>')
+def edit_task(task_id):
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
