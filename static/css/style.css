@@ -1,0 +1,8 @@
+/*styling done and edit buttons*/
+
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    padding: 0 0.5em;
+}
