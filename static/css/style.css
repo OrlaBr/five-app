@@ -1,6 +1,15 @@
 /** navbar **/
+. nav-wrapper {
+    position: absolute;
+    z-index: 0; 
+}
+
 .brand-logo {
     margin-left: 10px;
+}
+
+.page-footer {
+    padding: 0;
 }
 
 /* styling buttons */
@@ -13,11 +22,32 @@
 }
 
 /***index-page***/
+.index {
+    display: flex;
+    min-height: 86vh;
+    flex-direction: column;
+    background-size: cover;
+    margin-bottom: 0px;
+}
 .index-bg {
     background-color: #f67138;
-    margin: 20px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 25px;
 }
 
+.index-btn {
+    margin-top: 40px;
+}
+
+.index-header {
+    font-size: 100px;
+    padding: 30px;
+}
+
+.stars {
+    padding-top: 30px;
+}
 
 
 

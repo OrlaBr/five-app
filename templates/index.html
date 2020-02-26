@@ -2,12 +2,19 @@
 {% block content %}
 
 <section>
-    <div class="container">
+    <div class="container index">
         <div class="row">
                 <div class="center-align index-bg">
-                    <span class="indigo-text"><i class="medium material-icons">stars</i></span>
+                    <span class="indigo-text"><i class="medium material-icons stars">stars</i></span>
+                    <h1 class="index-header"><span class="white-text">FIVE!</span></h1>
+                    <p><span class="white-text">a simple app to help relieve <br>stress and anxiety in <br>5 simple steps.</span></p>
                 </div>
         </div>
+
+        <div class="center-align index-btn">
+            <a href="{{ url_for('get_tasks') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Take me to 5 now</a>
+        </div>
+        
     </div>
 
 </section>
