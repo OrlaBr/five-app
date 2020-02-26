@@ -12,9 +12,10 @@
     padding: 0 0.5em;
 }
 
-/***icons***/
-.fa-hand-holding-heart {
-    color: #f67138;
+/***index-page***/
+.index-bg {
+    background-color: #f67138;
+    margin: 20px;
 }
 
 
