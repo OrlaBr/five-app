@@ -15,7 +15,7 @@
     <header>
             <nav>
             <div class="nav-wrapper blue-grey lighten-5">
-            <a href="{{ url_for('get_categories') }}" class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span></a>
+            <a href="{{ url_for('get_index') }}" class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"><span class="orange-text">menu</span></i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('get_tasks') }}"><span class="orange-text">Categories</span></a></li>
@@ -23,7 +23,7 @@
                 <li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Sign up</span></a></li>
             </ul>
              <ul class="side-nav" id="mobile-demo">
-                <li><a href="{{ url_for('get_tasks') }}">Home</a></li>
+                <li><a href="{{ url_for('get_index') }}">Home</a></li>
                 <li><a href="{{ url_for('add_task') }}">Add new 5</a></li>
                 <li><a href="{{ url_for('get_categories') }}">Manage Categories</a></li>
             </ul>
