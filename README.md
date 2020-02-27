@@ -2,7 +2,16 @@
 ## Work-in-Progress
 
 
-a simple task app using Python, Flask, Materialize, and MongoDB
+a simple app created using 
+
+- Python - language
+- Flask - framework
+- MongoDB - database
+- Materialize - styling
+- WTForms - validation of forms
+- Passlib - password protection
+
+
 
 
 

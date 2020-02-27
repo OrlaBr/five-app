@@ -4,7 +4,7 @@ from os import path
 if path.exists("env.py"):
     import env
 # import tools
-from flask import Flask, render_template, redirect, request, url_for, session, flash
+from flask import Flask, render_template, redirect, request, url_for, session
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
@@ -20,17 +20,6 @@ mongo = PyMongo(app)
 @app.route('/get_index')
 def get_index():
     return render_template("index.html")
-
-# login page
-@app.route('/get_login')
-def get_login():
-    return render_template("login.html")
-
-
-# register page
-@app.route('/get_register', methods=['GET', 'POST'])
-def get_register():
-    return render_template("register.html")
 
 
 # about page
