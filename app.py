@@ -38,6 +38,13 @@ def get_register():
 def about():
     return render_template("about.html")
 
+
+# about page
+@app.route('/random')
+def random():
+    return render_template("random.html")
+
+
 # tasks page
 @app.route('/get_tasks')
 def get_tasks():
