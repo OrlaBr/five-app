@@ -2,7 +2,8 @@ import os
 from os import path
 if path.exists("env.py"):
     import env
-from flask import Flask, render_template, redirect, request, url_for
+
+from flask import Flask, render_template, redirect, request, url_for, session, flash
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
@@ -13,11 +14,22 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
-
+# index page
 @app.route('/')
 @app.route('/get_index')
 def get_index():
     return render_template("index.html")
+
+# login page
+@app.route('/get_login')
+def get_login():
+    return render_template("login.html")
+
+
+# register page
+@app.route('/get_register')
+def get_register():
+    return render_template("register.html")
 
 
 @app.route('/get_tasks')
