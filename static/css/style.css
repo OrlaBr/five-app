@@ -2,6 +2,10 @@ body {
     color: #424242;
 }
 
+.number {
+    font-family: 'Alfa Slab One';
+}
+
 
 /** navbar **/
 . nav-wrapper {
@@ -70,6 +74,9 @@ body {
     padding-top: 20px;
 }
 
+.random-btn {
+    margin: 40px;
+}
 .card-title {
     color:  #424242;
     background-color: #eceff1;
@@ -78,4 +85,10 @@ body {
 
 .card .card-image .card-title {
     color:  #424242;
+}
+.random-btn {
+    margin: 40px;
+}
+.random-add {
+    margin: 40px;
 }
