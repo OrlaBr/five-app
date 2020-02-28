@@ -1,20 +1,72 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <section>
-    <div class="container index">
+    <!--random heading section -->
+    <div class="container random">
         <div class="row">
-                <div class="center-align index-bg">
-                    <span class="indigo-text"><i class="medium material-icons stars">stars</i></span>
-                    <h1 class="index-header"><span class="white-text">Random</span></h1>
-                    <p><span class="white-text">a simple app to help relieve <br>stress and anxiety in <br>5 simple steps.</span></p>
-                </div>
+            <div class="center-align index-bg">
+                <h4 class="random-header"><span class="white-text">Random Acts of Mindfullness!</span></h4>
+            </div>
+            <div class="center-align random-text">
+                <img src="static/img/ram-emoji.png" alt="" class=" responsive-img">
+                <p>Browse through our RAMs - Random Acts of Mindfullness.</p>
+                <p> Test them out, see what you like and dont like.</p>
+            </div>
         </div>
-
         <div class="center-align index-btn">
-            <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Take me to 5 now</a>
+            <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your own RAM!</a>
         </div>
-        
+    </div>
+
+    <div class="container">
+
+        <!--random categories section -->
+
+        <div id="random-tasks" class="row flex">
+            <div class="col l6 xl4">
+                <div class="card large">
+                    <div class="card-image">
+                        <div class="card-img">
+                            <img class="responsive-img" src="static/img/owl.png" alt="cartoon owl">
+                        </div>
+                        <span class="card-title center-align ">5 Senses</span>
+                    </div>
+                    <div class="card-content">
+                        <p> 5 things you see, 4 things you hear, 3 things you smell, 2 things you can touch, 1 thing you taste</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Macro generated card to display entry -->
+            <div class="col l6 xl4">
+                <div class="card large">
+                    <div class="card-image">
+                        <div class="card-img">
+                            <img class="responsive-img" src="static/img/penguin.png" alt="Poster for Avengers: Endgame">
+                        </div>
+                        <span class="card-title">5 Sights</span>
+                    </div>
+                    <div class="card-content">
+                        <p> 5 colors I see, 4 shapes I see, 3 soft things I see, 2 people I see, 1 book I see</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col l6 xl4">
+                <div class="card large">
+                    <div class="card-image">
+                        <div class="card-img">
+                            <img class="responsive-img" src="static/img/bunny.png" alt="Poster for Abominable">
+                        </div>
+                        <span class="card-title">5 fun Facts about Rabbits!</span>
+                    </div>
+                    <div class="card-content">
+                        <p>A female rabbit is called a doe.A male rabbit is called a buck.A young rabbit is called a kit (or kitten).Rabbits have a lifespan of around 10 years.Rabbits have long ears which can be as long as 10 cm (4 in)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </section>

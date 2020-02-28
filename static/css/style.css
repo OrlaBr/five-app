@@ -1,3 +1,8 @@
+body {
+    color: #424242;
+}
+
+
 /** navbar **/
 . nav-wrapper {
     position: absolute;
@@ -49,5 +54,28 @@
     padding-top: 30px;
 }
 
+/***random-page***/
 
+.random-bg {
+    background-color: #f67138;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+}
+.random-header {
+    padding-top: 25px;
+}
 
+.random-text {
+    padding-top: 20px;
+}
+
+.card-title {
+    color:  #424242;
+    background-color: #eceff1;
+    width: 100%;
+}
+
+.card .card-image .card-title {
+    color:  #424242;
+}
