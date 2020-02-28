@@ -34,6 +34,12 @@ def random():
     return render_template("random.html")
 
 
+# add_ram page
+@app.route('/add_ram')
+def add_ram():
+    return render_template("add_ram.html")
+
+
 # tasks page
 @app.route('/get_tasks')
 def get_tasks():

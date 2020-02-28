@@ -5,86 +5,51 @@
     <div class="container random">
         <div class="row">
             <div class="center-align index-bg">
-                <h4 class="random-header"><span class="white-text">Add your RAM!</span></h4>
+                <h4 class="random-header"><span class="white-text">Add your FIVE!</span></h4>
             </div>
             <div class="center-align random-text">
-                <h5>Add your favourite 5, whether its exercises, actions, fun facts, stupid things. 5 things that always make you smile</h5>
-                <img src="static/img/ram-emoji.png" alt="" class=" responsive-img">
-                <p>(Random Acts of Mindfullness)</p>
+                <h5>Add your favourite 5 RAMs, whether its exercises, actions, fun facts, stupid things. <br><br>5 things that always make you smile</h5>
             </div>
         </div>
     </div>
-
-    <div class="container">
-
-        <!--random categories section -->
-
-        <div id="random-tasks" class="row flex">
-            <div class="col l6 xl4">
-                <div class="card medium">
-                    <div class="card-image">
-                        <div class="card-img">
-                            <img class="responsive-img" src="static/img/owl.png" alt="cartoon owl">
-                        </div>
-                        <span class="card-title center-align">5 Senses</span>
-                    </div>
-                    <div class="card-content">
-                        <p><span class="number">5 </span>  things you see </p>
-                        <p><span class="number">4 </span>  things you hear </p>
-                        <p><span class="number">3 </span>  things you smell </p>
-                        <p><span class="number">2 </span>  things you can touch</p>
-                        <p><span class="number">1 </span>  thing you taste </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col l6 xl4">
-                <div class="card medium">
-                    <div class="card-image">
-                        <div class="card-img">
-                            <img class="responsive-img" src="static/img/penguin.png" alt="Poster for Avengers: Endgame">
-                        </div>
-                        <span class="card-title center-align">5 Sights</span>
-                    </div>
-                    <div class="card-content">
-                        <p><span class="number">5 </span>  colors </p>
-                        <p><span class="number">4 </span>  shapes </p>
-                        <p><span class="number">3 </span>  soft things </p>
-                        <p><span class="number">2 </span>  people</p>
-                        <p><span class="number">1 </span>  book </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col l6 xl4">
-                <div class="card medium">
-                    <div class="card-image">
-                        <div class="card-img">
-                            <img class="responsive-img" src="static/img/bunny.png" alt="Poster for Abominable">
-                        </div>
-                        <span class="card-title">5 fun Facts about Rabbits!</span>
-                    </div>
-                    <div class="card-content">
-                        <p><span class="number">1.</span> A female is called a doe</p>
-                        <p><span class="number">2.</span> A male is called a buck</p>
-                        <p><span class="number">3.</span> A baby is called a kit or kitten</p>
-                        <p><span class="number">4.</span> Live for up to 10 years</p>
-                        <p><span class="number">5.</span> Ears as long as a pencil</p>
-                    </div>
-                </div>
-            </div>
-
+    <!--add your ram section -->
+    <div class="row center-align">
+        <div>
+            <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class="responsive-img">
         </div>
-    </div>
+        <form action="{{ url_for('insert_task') }}" method="POST" class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <select id="category" name="category_name">
+                        <option value="" disabled selected>Choose Category</option>
+                        {% for cat in categories %}
+                        <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                        {% endfor %}
+                    </select>
+                    <label>Category</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">face</i>
+                    <input id="task_name" name="task_name" type="text" class="validate">
+                    <label>My Fav Five</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">create</i>
+                    <textarea name="task_description" id="task_description" class="materialize-textarea"></textarea>
+                    <label>Add your 5 here</label>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn waves-effect waves-light" type="submit" name="action"><i class="material-icons right">add</i>Add to Five!
+                </button>
+            </div>
+        </form>
 
-    <div class="center-align">
-        <a href="{{ url_for('get_tasks') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>See more!</a>
     </div>
-    <div class="center-align random-btn">
-        <h5 class="random-add">Have a favourite 5 of your own? Why not add to our collection.</h5>
-        <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your own RAM</a>
-    </div>
-
 </section>
 
 {% endblock %}
