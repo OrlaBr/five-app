@@ -8,10 +8,13 @@
                 <h4 class="random-header"><span class="white-text">Random Acts of Mindfullness!</span></h4>
             </div>
             <div class="center-align random-text">
-                <h5>Browse through our RAMs</h5>
                 <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class=" responsive-img">
                 <p>(Random Acts of Mindfullness)</p>
+                <h5>You can browse through our RAMs below or you can start adding your own!</h5>
             </div>
+                <div class="center-align random-btn">
+        <a href="{{ url_for('add_ram') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your own RAM</a>
+    </div>
         </div>
     </div>
 
@@ -79,10 +82,6 @@
 
     <div class="center-align">
         <a href="{{ url_for('get_tasks') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>See more!</a>
-    </div>
-    <div class="center-align random-btn">
-        <h5 class="random-add">Have a fav 5 of your own? Why not add to our collection.</h5>
-        <a href="{{ url_for('add_ram') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your own RAM</a>
     </div>
 
 </section>
