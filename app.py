@@ -117,7 +117,7 @@ def delete_category(category_id):
 def insert_category():
     category_doc = {'category_name': request.form.get('category_name')}
     mongo.db.categories.insert_one(category_doc)
-    return redirect(url_for('get_categories'))
+    return redirect(url_for('add_ram'))
 
 
 @app.route('/add_category')
