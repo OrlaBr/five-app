@@ -91,6 +91,7 @@ body {
 .random-btn {
     margin: 40px;
 }
+
 .card-title {
     color:  #424242;
     background-color: #eceff1;
@@ -100,9 +101,17 @@ body {
 .card .card-image .card-title {
     color:  #424242;
 }
+
 .random-btn {
     margin: 40px;
 }
+
 .random-add {
     margin: 40px;
+}
+
+.random-cat {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
