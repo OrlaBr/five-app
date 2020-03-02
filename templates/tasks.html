@@ -1,26 +1,58 @@
 {% extends 'base.html'%} {% block content %}
-<div class="row">
-    <ul class="collapsible" data-collapsible="accordion">
-        {% for task in tasks %}
-        <li>
-            <div class="collapsible-header">
-                            <div class="task_header col s9">
-                            <i class="material-icons">expand_more</i>
-                    <strong>{{task.task_name}}</strong>
+<section>
+    
+    <div class="container">
+    <!--tasks heading section -->
+                    <div class="row center-align">
+                    <div class="index-bg">
+                        <h4 class="random-header"><span class="white-text">Edit your 5</span></h4>
+                    </div>
+                    <div class="cat_text">
+                        <h5>You can edit the existing FIVES here</h5>
+                    </div>
                 </div>
-                <div class="col s3">
-                    <a href="{{url_for('edit_task', task_id=task._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
-                    <a href="{{url_for('delete_task', task_id=task._id)}}" class="waves-effect waves-light btn btn_small">Delete</a>
-                    
+    <!--tasks list section -->
+        <div class="row">
+            <ul class="collapsible" data-collapsible="accordion">
+                {% for task in tasks %}
+                <li>
+                    <div class="collapsible-header">
+                                    <div class="task_header col s9">
+                                    <i class="material-icons">expand_more</i>
+                            <strong>{{task.task_name}}</strong>
+                        </div>
+                        <div class="col s3">
+                            <a href="{{url_for('edit_task', task_id=task._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                            <a href="{{url_for('delete_task', task_id=task._id)}}" class="waves-effect waves-light btn btn_small">Del</a>
+                            
+                        </div>
+                    </div>
+                    <div class="collapsible-body">
+                        <span>
+                        {{task.task_description}} 
+                    </span>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    <!--/tasks list section -->
+                <div class="add_ram_btn center-align">
+                <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
+                <h6><strong>Want to add FIVE? Go to 'Add your 5' page</strong></h6>
+                <div class="index-btn">
+                    <a href="{{ url_for('add_ram') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your 5</a>
                 </div>
             </div>
-            <div class="collapsible-body">
-                <span>
-                {{task.task_description}} 
-            </span>
+        <!--/tasks list section -->
+         <div class="center-align">
+            <div>
+                <img src="static/img/ram2.png" alt="emoji of a ram/male sheep" class="responsive-img">
             </div>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+            <br>
+            <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>5 things to make you smile<i class="material-icons prefix">star_border</i></span></h6>
+            <br>
+        </div>
+    </div>
+</section>
 {% endblock %}
