@@ -38,6 +38,7 @@ body {
     background-size: cover;
     margin-bottom: 0px;
 }
+
 .index-bg {
     background-color: #f67138;
     margin-top: 50px;
@@ -45,18 +46,31 @@ body {
     border-radius: 25px;
 }
 
+.index h1 {
+    padding: 0px;
+}
+
+.index p {
+    font-size: 20px;
+}
+
 .index-btn {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .index-header {
     font-size: 100px;
-    padding: 30px;
+    padding: 20px;
 }
 
 .stars {
     padding-top: 30px;
 }
+
+.page-footer .footer-copyright {
+    background-color: white;
+}
+
 
 /***random-page***/
 
