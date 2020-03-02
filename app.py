@@ -37,7 +37,8 @@ def random():
 # add_ram page
 @app.route('/add_ram')
 def add_ram():
-    return render_template("add_ram.html")
+    return render_template('add_ram.html',
+                           categories=mongo.db.categories.find())
 
 
 # tasks page

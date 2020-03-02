@@ -8,55 +8,55 @@
                 <h4 class="random-header"><span class="white-text">Add your FIVE!</span></h4>
             </div>
             <div class="random-text">
-                <h5>Add your favourite 5 RAMs, whether its exercises, actions, fun facts, stupid things</h5> 
+                <h5>Add your favourite 5 RAMs, whether its exercises, actions, fun facts, stupid things</h5>
                 <br>
                 <h6><span class="orange-text"><i class="material-icons prefix">star_border</i> things that always make you smile<i class="material-icons prefix">star_border</i></span></h6>
                 <br>
             </div>
             <div>
-            <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class="responsive-img">
-        </div>
+                <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class="responsive-img">
+            </div>
         </div>
     </div>
     <!--add your ram section -->
     <div class="container">
-    <div class="row center-align">
-        <form action="{{ url_for('insert_task') }}" method="POST" class="col s12">
-            <div class="row">
+        <div class="row center-align">
+            <form action="{{ url_for('insert_task') }}" method="POST" class="col s12">
                 <div class="row">
-                    <div class="input-field col s12">
-                        <select id="category" name="category_name">
-                            <option value="" disabled selected>Choose Category</option>
-                            {% for cat in categories %} {% if cat.category_name == task.category_name%}
-                            <option value="{{cat.category_name}}" selected>{{cat.category_name}}</option>
-                            {% else %}
-                            <option value="{{cat.category_name}}">{{cat.category_name}}</option>
-                            {% endif %} {% endfor %}
-                        </select>
-                        <label>Task Category</label>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select id="category" name="category_name">
+                                <option value="" disabled selected>Choose Category</option>
+                                {% for cat in categories %} {% if cat.category_name == cat.category_name%}
+                                <option value="{{cat.category_name}}" selected>{{cat.category_name}}</option>
+                                {% else %}
+                                <option value="{{cat.category_name}}">{{cat.category_name}}</option>
+                                {% endif %} {% endfor %}
+                            </select>
+                            <label>Task Category</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">face</i>
+                            <input id="task_name" name="task_name" type="text" class="validate">
+                            <label>My Fav Five</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">create</i>
+                            <textarea name="task_description" id="task_description" class="materialize-textarea"></textarea>
+                            <label>Add your 5 here</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button class="btn waves-effect waves-light" type="submit" name="action"><i class="material-icons right">add</i>Add to Five!
+                        </button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">face</i>
-                        <input id="task_name" name="task_name" type="text" class="validate">
-                        <label>My Fav Five</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">create</i>
-                        <textarea name="task_description" id="task_description" class="materialize-textarea"></textarea>
-                        <label>Add your 5 here</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <button class="btn waves-effect waves-light" type="submit" name="action"><i class="material-icons right">add</i>Add to Five!
-                    </button>
-                </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
     </div>
 </section>
 
