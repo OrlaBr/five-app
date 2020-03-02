@@ -1,16 +1,15 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <section>
     <div class="container index">
         <div class="row">
-                <div class="center-align index-bg">
-                    <span class="indigo-text"><i class="medium material-icons stars">stars</i></span>
-                    <h1 class="index-header"><span class="white-text">FIVE!</span></h1>
-                    <p><span class="white-text">a simple app to help relieve <br>stress and anxiety in <br>5 simple steps.</span></p>
-                </div>
+            <div class="center-align index-bg">
+                <span class="indigo-text"><i class="medium material-icons stars">stars</i></span>
+                <h1 class="index-header"><span class="white-text">FIVE!</span></h1>
+                <p><span class="white-text">a simple app to help relieve <br>stress and anxiety in <br>5 simple steps.</span></p>
+            </div>
         </div>
-            <div class="center-align">
+        <div class="center-align">
             <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class="responsive-img">
         </div>
 
@@ -18,17 +17,16 @@
             <a href="{{ url_for('random') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Take me to FIVE</a>
         </div>
 
-        
     </div>
 
 </section>
 
-        <footer class="page-footer white">
-          <div class="footer-copyright">
-            <div class="container orange-text center-align">
-            © 2020 FIVE 
-            </div>
-          </div>
-        </footer>
+<footer class="page-footer white">
+    <div class="footer-copyright">
+        <div class="container orange-text center-align">
+            © 2020 FIVE
+        </div>
+    </div>
+</footer>
 
 {% endblock %}
