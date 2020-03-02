@@ -85,6 +85,11 @@ def delete_task(task_id):
     mongo.db.tasks.remove({'_id': ObjectId(task_id)})
     return redirect(url_for('get_tasks'))
 
+
+@app.route('/viewtasks')
+def viewtasks():
+    return render_template('viewtasks.html', tasks=mongo.db.tasks.find())
+
 # getting categories from database
 @app.route('/get_categories')
 def get_categories():
