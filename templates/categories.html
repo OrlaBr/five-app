@@ -1,5 +1,4 @@
-{% extends 'base.html'%} 
-{% block content %}
+{% extends 'base.html'%} {% block content %}
 
 <div class="row">
     <!--category heading section -->
@@ -13,22 +12,26 @@
             </div>
         </div>
     </div>
-    <ul class="collapsible" data-collapsible="accordion">
-        {% for category in categories %}
-        <li>
-            <div class="collapsible-header">
-                <div class="task_header col s9">
-                    <strong>{{category.category_name}}</strong>
+    <!--add category button -->
+    <div class="row">
+        <ul class="collapsible" data-collapsible="accordion">
+            {% for category in categories %}
+            <li>
+                <div class="collapsible-header">
+                    <div class="task_header col s9">
+                        <strong>{{category.category_name}}</strong>
+                    </div>
+                    <a href="{{ url_for('edit_category', category_id=category._id) }}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                    <a href="{{ url_for('delete_category', category_id=category._id) }}" class="waves-effect waves-light btn btn_small">Del</a>
                 </div>
-                <a href="{{url_for('edit_category', category_id=category._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
-                <a href="{{url_for('delete_category', category_id=category._id)}}" class="waves-effect waves-light btn btn_small">Delete</a>
-            </div>
-        </li>
-        {% endfor %}
-    </ul>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
+<!--add category button -->
 <div class="row center-align">
-    <a href="{{url_for('add_category')}}" class="waves-effect waves-light btn">
+    <a href="{{ url_for('add_category') }}" class="waves-effect waves-light btn">
         <i class="material-icons right">add</i>Add Category
     </a>
 </div>
@@ -36,8 +39,8 @@
     <div>
         <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class="responsive-img">
     </div>
-                    <br>
-                <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>things that make you hmmm hmmm hmmm<i class="material-icons prefix">star_border</i></span></h6>
-                <br>
+    <br>
+    <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>things that make you hmmm hmmm hmmm<i class="material-icons prefix">star_border</i></span></h6>
+    <br>
 </div>
 {% endblock %}
