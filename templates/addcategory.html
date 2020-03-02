@@ -2,21 +2,35 @@
 
 {% block content %}
 <section>
-<h3>Add Category</h3>
-<div class="row">
-    <form action="{{ url_for('insert_category') }}" method="POST" class="col s12">
-        <div class="row">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">poll</i>
-                <input id="category_name" name="category_name" type="text" class="validate">
-                <label for="category_name">Category Name</label>
+    <div class="container add-categories">
+            <div class="row center-align">
+                <div class="index-bg">
+                     <h4 class="random-header"><span class="white-text">Add a new Category</span></h4>
+                </div>
             </div>
-        </div>
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Add Category<i class="material-icons right">add</i>
-            </button>
+            <form action="{{ url_for('insert_category') }}" method="POST" class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">pan_tool</i>
+                        <input id="category_name" name="category_name" type="text" class="validate">
+                        <label for="category_name">Category Name</label>
+                    </div>
+                </div>
+                <div class="row center-align">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Add Category<i class="material-icons right">add</i>
+                    </button>
+                </div>
+            </form>
+            <div class="center-align">
+            <div>
+                <img src="static/img/ram2.png" alt="emoji of a ram/male sheep" class="responsive-img">
+            </div>
+            <br>
+            <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>things that make you smile<i class="material-icons prefix">star_border</i></span></h6>
+            <br>
         </div>
-    </form>
-</div>
+        </div>
+    </div>
 </section>
 {% endblock %}

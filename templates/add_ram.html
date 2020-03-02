@@ -51,14 +51,22 @@
                             <label>Add your 5 here</label>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row add-ram">
                         <button class="btn waves-effect waves-light" type="submit" name="action"><i class="material-icons right">add</i>Add to Five!
                         </button>
                     </div>
                 </div>
             </form>
-            <p>(Hey, don't worry about making a mistake , you can easily edit after)</p>
+            </div>
+            <div class="add_ram_btn center-align">
+                <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
+                <h6><strong>Can't find a category to put your fav 5 into? Why not add your own.</strong></h6>
+                <div class="index-btn">
+                    <a href="{{ url_for('random') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add a category</a>
+                </div>
+            </div>
         </div>
+        
     </div>
 </section>
 
