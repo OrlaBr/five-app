@@ -72,7 +72,7 @@ body {
 }
 
 
-/***random-page***/
+/***random.html***/
 
 .random-bg {
     background-color: #f67138;
@@ -114,4 +114,9 @@ body {
     font-weight: bold;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+/***category.html***/
+.cat_text {
+    padding: 20px;
 }
