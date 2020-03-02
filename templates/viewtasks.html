@@ -10,65 +10,26 @@
                 <h5>Browse through our FIVEs</h5>
             </div>
         </div>
-
- <!----view tasks cards-->
-
-        <div id="random-tasks" class="row flex">
-            <div class="col l6 xl4">
-                <div class="card medium grow">
-                    <div class="card-image">
-                        <div class="card-img">
-                            <img class="responsive-img" src="static/img/owl.png" alt="cartoon owl">
+<!----view tasks list-->
+       <div class="row flex">
+            <ul>
+                {% for task in tasks %}
+                <li class="col l6 xl4">
+                    <div class="card small grow center-align">                      
+                         <div class="card-title indigo white-text">
+                            <strong>{{task.task_name}}</strong>
                         </div>
-                        <span class="card-title center-align">5 Senses</span>
+                         <div class="card-content">
+                        <span>
+                        {{task.task_description}} 
+                    </span>
                     </div>
-                    <div class="card-content">
-                        <p><span class="number">5 </span>  things you see </p>
-                        <p><span class="number">4 </span>  things you hear </p>
-                        <p><span class="number">3 </span>  things you smell </p>
-                        <p><span class="number">2 </span>  things you can touch</p>
-                        <p><span class="number">1 </span>  thing you taste </p>
                     </div>
-                </div>
-            </div>
-
-            <div class="col l6 xl4">
-                <div class="card medium grow">
-                    <div class="card-image">
-                        <div class="card-img">
-                            <img class="responsive-img" src="static/img/penguin.png" alt="cartoon penguin">
-                        </div>
-                        <span class="card-title center-align">5 Sights</span>
-                    </div>
-                    <div class="card-content">
-                        <p><span class="number">5 </span>  colors </p>
-                        <p><span class="number">4 </span>  shapes </p>
-                        <p><span class="number">3 </span>  soft things </p>
-                        <p><span class="number">2 </span>  people</p>
-                        <p><span class="number">1 </span>  book </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col l6 xl4">
-                <div class="card medium grow">
-                    <div class="card-image">
-                        <div class="card-img">
-                            <img class="responsive-img" src="static/img/bunny.png" alt="cartoon rabbit">
-                        </div>
-                        <span class="card-title">5 fun Facts about Rabbits!</span>
-                    </div>
-                    <div class="card-content">
-                        <p><span class="number">1.</span> A female is called a doe</p>
-                        <p><span class="number">2.</span> A male is called a buck</p>
-                        <p><span class="number">3.</span> A baby is called a kit or kitten</p>
-                        <p><span class="number">4.</span> Live for up to 10 years</p>
-                        <p><span class="number">5.</span> Ears as long as a pencil</p>
-                    </div>
-                </div>
-            </div>
-
+                </li>
+                {% endfor %}
+            </ul>
         </div>
+ <!----view tasks cards-->
 
     </div> 
                 <div class="add_ram_btn center-align">
