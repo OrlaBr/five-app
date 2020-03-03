@@ -1,30 +1,30 @@
 {% extends 'base.html'%} {% block content %}
 <section>
-    
+
     <div class="container">
-    <!--tasks heading section -->
-                    <div class="row center-align">
-                    <div class="index-bg">
-                        <h4 class="random-header"><span class="white-text">Edit FIVE!</span></h4>
-                    </div>
-                    <div class="cat_text">
-                        <h5>You can edit your FIVE here</h5>
-                    </div>
-                </div>
-    <!--tasks list section -->
+        <!--tasks heading section -->
+        <div class="row center-align">
+            <div class="index-bg">
+                <h4 class="random-header"><span class="white-text">Edit FIVE!</span></h4>
+            </div>
+            <div class="cat_text">
+                <h5>You can edit your FIVE here</h5>
+            </div>
+        </div>
+        <!--tasks list section -->
         <div class="row">
             <ul class="collapsible" data-collapsible="accordion">
                 {% for task in tasks %}
                 <li>
                     <div class="collapsible-header">
-                                    <div class="task_header col s9">
-                                    <i class="material-icons">expand_more</i>
+                        <div class="task_header col s9">
+                            <i class="material-icons">expand_more</i>
                             <strong>{{task.task_name}}</strong>
                         </div>
                         <div class="col s3">
-                            <a href="{{url_for('edit_task', task_id=task._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
-                            <a href="{{url_for('delete_task', task_id=task._id)}}" class="waves-effect waves-light btn btn_small">Del</a>
-                            
+                            <a href="{{ url_for('edit_task', task_id=task._id) }}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                            <a href="{{ url_for('delete_task', task_id=task._id) }}" class="waves-effect waves-light btn btn_small">Del</a>
+
                         </div>
                     </div>
                     <div class="collapsible-body">
@@ -36,28 +36,29 @@
                 {% endfor %}
             </ul>
         </div>
-    <!--/tasks list section -->
-                <div class="add_ram_btn center-align">
-                <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
-                <h6><strong>Want to add another FIVE? Go to 'Add your 5'</strong></h6>
-                <div class="index-btn">
-                    <a href="{{ url_for('add_ram') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your 5</a>
-                </div>
-            </div>
-                <div class="add_ram_btn center-align">
-                <span class="orange-text add-star"><i class="medium material-icons stars">stars</i></span>
-                <h6><strong>Want to see all the FIVES? Go to 'Our 5'</strong></h6>
-                <div class="index-btn">
-                    <a href="{{ url_for('viewtasks') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Our 5</a>
-                </div>
-            </div>
         <!--/tasks list section -->
-         <div class="center-align">
+        <div class="add_ram_btn center-align">
+            <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
+            <h6><strong>Want to add another FIVE? Go to 'Add your 5'</strong></h6>
+            <div class="index-btn">
+                <a href="{{ url_for('add_ram') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your 5</a>
+            </div>
+        </div>
+        <div class="add_ram_btn center-align">
+            <span class="orange-text add-star"><i class="medium material-icons stars">stars</i></span>
+            <h6><strong>Want to see all the FIVES? Go to 'Our 5'</strong></h6>
+            <div class="index-btn">
+                <a href="{{ url_for('viewtasks') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Our 5</a>
+            </div>
+        </div>
+        <!--/tasks list section -->
+        <div class="center-align">
             <div>
                 <img src="static/img/ram2.png" alt="emoji of a ram/male sheep" class="responsive-img">
             </div>
             <br>
-            <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>5 things to make you smile<i class="material-icons prefix">star_border</i></span></h6>
+            <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>5 things to make you smile<i class="material-icons prefix">star_border</i></span>
+				</h6>
             <br>
         </div>
     </div>
