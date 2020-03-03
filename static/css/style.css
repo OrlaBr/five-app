@@ -145,3 +145,19 @@ body {
 .cat_text {
     padding: 30px;
 }
+/***about.html***/
+.about {
+    margin: 20px;
+}
+
+.about-header {
+    margin: 10px;
+}
+
+.about-text {
+    margin: 10px;
+}
+
+.about-btn {
+    margin: 10px;
+}

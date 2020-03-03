@@ -2,20 +2,31 @@
 {% block content %}
 
 <section>
-    <div class="container index">
-        <div class="row">
-                <div class="center-align index-bg">
-                    <span class="indigo-text"><i class="medium material-icons stars">stars</i></span>
-                    <h1 class="index-header"><span class="white-text">FIVE</span></h1>
-                    <p><span class="white-text">a simple app to help relieve <br>stress and anxiety in <br>5 simple steps.</span></p>
-                </div>
+    <div class="container">
+        <div class="row about">
+            <div class="center-align index-bg about-header">
+                <h4 class="random-header"><span class="white-text">About FIVE <i class="material-icons">pan_tool</i></span></h4>
+            </div>
+            <div class="row center-align about-text">
+            <p>Anxiety symptoms are common in children and adolescents, with 10-20% of school-aged children experiencing anxiety symptoms. Children can learn to cope with anxiety by learning a few crucial skills. Teaching children and adolescents how to manage their own anxiety can go a long way in helping them feel better.</p>
+<p>FIVE can help kids learn ways to manage their fears and reduce their anxieties. It teaches our kids coping strategies so they can use them to help them deal with whatever troubling event they encounter as well as boosting their resilience for life. They can use the exercises or they can add their own favourites. Whatever makes them feel less anxious, and calmer. 
+            </p>
+            </div>
+                        <div class="center-align">
+                <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class=" responsive-img">
+            </div>
         </div>
-        <div class="center-align index-btn">
-            <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Take me to 5 now</a>
-                <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>things that make you smile<i class="material-icons prefix">star_border</i></span>
-				</h6>
-        </div>    
     </div>
+        <div class="center-align index-btn about-btn">
+            <a href="{{ url_for('random') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Take me to RAM</a>
+        </div>    
 </section>
+    <footer class="page-footer white">
+        <div class="footer-copyright">
+            <div class="container orange-text center-align">
+                © 2020 FIVE
+            </div>
+        </div>
+    </footer>
 
 {% endblock %}
