@@ -71,6 +71,13 @@ body {
     background-color: white;
 }
 
+.index-ram {
+    padding: 10px;
+}
+
+.index-button {
+    margin-top: 5px;
+}
 
 /***random.html***/
 
