@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,48 +12,48 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css" />
     <title>Five!</title>
 </head>
-<body>
-<!----Navbar--->
-    <header>
-            <nav>
-            <div class="nav-wrapper blue-grey lighten-5">
-            <a href="{{ url_for('get_index') }}" class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"><span class="orange-text">menu</span></i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
-                <li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add your 5</span></a></li>
-                <li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a></li>
-                <li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
 
-            </ul>
-             <ul class="side-nav" id="mobile-demo">
-                <li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
-                <li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add your 5</span></a></li>
-                <li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a></li>
-                <li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
-            </ul>
+<body>
+    <!----Navbar--->
+    <header>
+        <nav>
+            <div class="nav-wrapper blue-grey lighten-5">
+                <a href="{{ url_for('get_index') }}" class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"><span class="orange-text">menu</span></i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
+                    <li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add your 5</span></a></li>
+                    <li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a></li>
+                    <li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
+                    <li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add your 5</span></a></li>
+                    <li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a></li>
+                    <li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
+                </ul>
             </div>
         </nav>
     </header>
-    
 
-<!----jinja block---->
+    <!----jinja block---->
     <div class="container">
-    {% block content%}
-    {% endblock %}
+        {% block content%} {% endblock %}
     </div>
 
-<!----footer---->
+    <!----footer---->
 
-<!----javascript/jquery---->
+    <!----javascript/jquery---->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
             $('.collapsible').collapsible();
             $('select').material_select();
             $(".button-collapse").sideNav();
         });
-    </script> 
+    </script>
 </body>
+
 </html>
