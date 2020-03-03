@@ -1,43 +1,49 @@
-{% extends 'base.html' %}
-{% block content %}
-    <h3>Add Your Five!</h3>
+{% extends 'base.html'%} {% block content %}
+<section>
     <div class="row">
-        <form action="{{ url_for('insert_task') }}" method="POST" class="col s12">
+        <!--category heading section -->
+        <div class="container random">
+            <div class="row center-align">
+                <div class="index-bg">
+                    <h4 class="random-header"><span class="white-text">Categories</span></h4>
+                </div>
+                <div class="cat_text">
+                    <h5>You can edit the existing Categories or add a new one!</h5>
+                </div>
+            </div>
+            <!--add category button -->
             <div class="row">
-                <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">pan_tool</i>
-                            <select id="category" name="category_name">
-                                <option value="" disabled selected>Choose Category</option>
-                                {% for cat in categories %}
-                                <option value="{{cat.category_name}}">{{cat.category_name}}</option>
-                                {% endfor %}
-                            </select>
-                            <label>Category</label>
+                <ul class="collapsible" data-collapsible="accordion">
+                    {% for category in categories %}
+                    <li>
+                        <div class="collapsible-header">
+                            <div class="task_header col s9">
+                                <strong>{{category.category_name}}</strong>
+                            </div>
+                            <a href="{{ url_for('edit_category', category_id=category._id) }}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                            <a href="{{ url_for('delete_category', category_id=category._id) }}" class="waves-effect waves-light btn btn_small">Del</a>
                         </div>
-                    </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="material-icons prefix">face</i>
-                    <input id="task_name" name="task_name" type="text" class="validate">
-                    <label for="icon_prefix">My Fav Five</label>
-                </div>
+                    </li>
+                    {% endfor %}
+                </ul>
             </div>
-            <div class="row">
-                <div class="input-field col s12">
-                <i class="material-icons prefix">create</i>
-                <textarea name="task_description" id="task_description" class="materialize-textarea"></textarea>
-                <label for="icon_telephone">Add your 5 here</label>
-                </div>
-            </div> 
-            <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action"><i class="material-icons right">add</i>Add to Five!
-            </button>  
+        </div>
+        <!--add category button -->
+        <div class="row center-align">
+            <a href="{{ url_for('add_category') }}" class="waves-effect waves-light btn">
+                <i class="material-icons right">add</i>Add Category
+            </a>
+        </div>
+        <!--add go to tasks button -->
+        <div class="center-align">
+            <div>
+                <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class="responsive-img">
             </div>
-            </div>
-        </form>
+            <br>
+            <h6><span class="orange-text"><i class="material-icons prefix">star_border</i>things that make you hmmm hmmm hmmm<i class="material-icons prefix">star_border</i></span>
+				</h6>
+            <br>
+        </div>
     </div>
-
-
-
+</section>
 {% endblock %}
