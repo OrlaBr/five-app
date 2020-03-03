@@ -8,7 +8,7 @@
                         <h4 class="random-header"><span class="white-text">Edit FIVE!</span></h4>
                     </div>
                     <div class="cat_text">
-                        <h5>You can edit the existing FIVES here</h5>
+                        <h5>You can edit your FIVE here</h5>
                     </div>
                 </div>
     <!--tasks list section -->
@@ -39,9 +39,16 @@
     <!--/tasks list section -->
                 <div class="add_ram_btn center-align">
                 <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
-                <h6><strong>Want to add FIVE? Go to 'Add your 5' page</strong></h6>
+                <h6><strong>Want to add another FIVE? Go to 'Add your 5'</strong></h6>
                 <div class="index-btn">
                     <a href="{{ url_for('add_ram') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add your 5</a>
+                </div>
+            </div>
+                <div class="add_ram_btn center-align">
+                <span class="orange-text add-star"><i class="medium material-icons stars">stars</i></span>
+                <h6><strong>Want to see all the FIVES? Go to 'Our 5'</strong></h6>
+                <div class="index-btn">
+                    <a href="{{ url_for('viewtasks') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Our 5</a>
                 </div>
             </div>
         <!--/tasks list section -->
