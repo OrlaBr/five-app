@@ -1,43 +1,46 @@
 {% extends 'base.html'%} {% block content %}
 <section>
-    <div class="container">
-        <!----view tasks heading-->
-         <div class="row center-align">
-             <div class="index-bg">
-                <h4 class="random-header"><span class="white-text">Our FIVE</span></h4>
-            </div>
-             <div class="cat_text">
-                <h6>Browse through our FIVEs, see what you like. <br><br> Come up with new ones and click the button below to add your own!</h6>
-            </div>
-        </div>
-<!----view tasks list-->
-       <div class="row flex">
-            <ul>
-                {% for task in tasks %}
-                <li class="col l6 xl4">
-                    <div class="card grow center-align">                      
-                         <div class="card-title indigo lighten-1 white-text">
-                            {{task.task_name}}
-                        </div>
-                         <div class="card-content">
-                        <span>
+	<div class="container">
+		<!----view tasks heading-->
+		<div class="row center-align">
+			<div class="index-bg">
+				<h4 class="random-header"><span class="white-text">Our FIVE</span></h4>
+			</div>
+			<div class="cat_text">
+				<h6>Browse through our FIVEs, see what you like.
+					<br><br> Come up with new ones and click the button below to add your own!</h6>
+			</div>
+		</div>
+		<!----view tasks list-->
+		<div class="row flex">
+			<ul>
+				{% for task in tasks %}
+				<li class="col l6 xl4">
+					<div class="card grow center-align">
+						<div class="card-title indigo lighten-1 white-text">
+							{{task.task_name}}
+						</div>
+						<div class="card-content">
+							<span>
                         {{task.task_description}} 
                     </span>
-                    </div>
-                    </div>
-                </li>
-                {% endfor %}
-            </ul>
-        </div>
- <!----view tasks cards-->
+						</div>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+		<!----view tasks cards-->
 
-    </div> 
-                <div class="add_ram_btn center-align">
-                <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
-                <h6><strong>You can add your own FIVE to our collection. <br><br>Think of 5 things you think, do or say, that always make you smile</strong></h6>
-                <div class="index-btn">
-                    <a href="{{ url_for('add_ram') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add to five</a>
-                </div>
-            </div>
+	</div>
+	<div class="add_ram_btn center-align">
+		<span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
+		<h6><strong>You can add your own FIVE to our collection. <br><br>Think of 5 things you think, do or say, that always make you smile</strong>
+		</h6>
+		<div class="index-btn">
+			<a href="{{ url_for('add_ram') }}"
+				class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Add to five</a>
+		</div>
+	</div>
 </section>
 {% endblock %}
