@@ -1,58 +1,52 @@
 import os
-# !hiding password
 from os import path
 if path.exists("env.py"):
     import env
-# import tools
-from flask import Flask, render_template, redirect, request, url_for, session
+from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
 app = Flask(__name__)
-# creating link to database
+
 app.config["MONGO_DBNAME"] = 'five-app'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
-# index page
+
 @app.route('/')
 @app.route('/get_index')
 def get_index():
     return render_template("index.html")
 
 
-# about page
 @app.route('/about')
 def about():
     return render_template("about.html")
 
 
-# random page
 @app.route('/random')
 def random():
     return render_template("random.html")
 
 
-# add_ram page
 @app.route('/add_ram')
 def add_ram():
     return render_template('add_ram.html',
                            categories=mongo.db.categories.find())
 
 
-# tasks page
 @app.route('/get_tasks')
 def get_tasks():
     return render_template("tasks.html", tasks=mongo.db.tasks.find())
 
-# add tasks page
+
 @app.route('/add_task')
 def add_task():
     return render_template('addtask.html',
                            categories=mongo.db.categories.find())
 
-# editing tasks delete, edit add, update task to mongodb
+
 @app.route('/insert_task', methods=['POST'])
 def insert_task():
     tasks = mongo.db.tasks
@@ -90,13 +84,13 @@ def delete_task(task_id):
 def viewtasks():
     return render_template('viewtasks.html', tasks=mongo.db.tasks.find())
 
-# getting categories from database
+
 @app.route('/get_categories')
 def get_categories():
     return render_template('categories.html',
                             categories=mongo.db.categories.find())
 
-# editing categories update, delete, insert, on database
+
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
     return render_template('editcategory.html',
