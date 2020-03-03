@@ -1,10 +1,10 @@
+from bson.objectid import ObjectId
+from flask_pymongo import PyMongo
+from flask import Flask, render_template, redirect, request, url_for
 import os
 from os import path
 if path.exists("env.py"):
     import env
-from flask import Flask, render_template, redirect, request, url_for
-from flask_pymongo import PyMongo
-from bson.objectid import ObjectId
 
 app = Flask(__name__)
 
@@ -59,18 +59,18 @@ def edit_task(task_id):
     the_task = mongo.db.tasks.find_one({"_id": ObjectId(task_id)})
     all_categories = mongo.db.categories.find()
     return render_template('edittask.html', task=the_task,
-                            categories=all_categories)
+                           categories=all_categories)
 
 
 @app.route('/update_task/<task_id>', methods=["POST"])
 def update_task(task_id):
     tasks = mongo.db.tasks
     tasks.update({'_id': ObjectId(task_id)},
-        {
-            'task_name': request.form.get('task_name'),
-            'category_name': request.form.get('category_name'),
-            'task_description': request.form.get('task_description'),
-        })
+                 {
+        'task_name': request.form.get('task_name'),
+        'category_name': request.form.get('category_name'),
+        'task_description': request.form.get('task_description'),
+    })
     return redirect(url_for('get_tasks'))
 
 
@@ -88,14 +88,14 @@ def viewtasks():
 @app.route('/get_categories')
 def get_categories():
     return render_template('categories.html',
-                            categories=mongo.db.categories.find())
+                           categories=mongo.db.categories.find())
 
 
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
     return render_template('editcategory.html',
-                            category=mongo.db.categories.find_one(
-                                {'_id': ObjectId(category_id)}))
+                           category=mongo.db.categories.find_one(
+                               {'_id': ObjectId(category_id)}))
 
 
 @app.route('/update_category/<category_id>', methods=['POST'])
