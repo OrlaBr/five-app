@@ -38,3 +38,26 @@ I carried out some research on creating apps for children and teens, and found l
  - https://www.uxmatters.com/mt/archives/2014/07/design-for-kids-digital-products-for-playing-and-learning.php
 
  Learning outcomes include using clean design with bright colours, simplicity. Obvious consistency across the design, a reason to use the app, let them be able to make mistakes, and easily fix them. A learning process through using the app.
+
+### User Stories:
+The app is a simple mindfulness app, that focuses more on storing information, then giving information. Children that suffer from anxiety are regularly taught exercises in grounding, and breathing, to help calm them down. By the time they get to be young teens, they have not just forgotten the steps of these exercises, they don’t want to do silly ‘children’s exercises’, and they certainly don’t want to listen to an adult, in particular their parents nagging them about remembering to do their grounding exercises. This app is for them. 
+
+_For the Generic User:_
+
+I designed this app with a particular type of user in mind. A young teen, who suffers from anxiety.  They are old enough to have a mobile phone and are fairly tech savvy, particularly when it comes to apps. They are old enough to almost hate their parents, and not want to listen to them, or any other adult talk about anxiety. They could have suffered from anxiety for years, or are newly anxious, they have been taught grounding and breathing exercises and are sick to death of adults talking about ‘mindfulness’. However much they hate ‘mindfulness’, they know it can work, however, in the heat of the moment, they tend to forget the exercises, and hate feeling vulnerable and asking for help. (Just like adults, this app can be used by adults too.)
+Potential use of the app:
+Use the calming grounding and breathing exercises to help soothe anxious feelings
+Personalize the app, using it as a safe place to store mindfulness exercises that they know work
+Use the app to store random lists of things they find funny, that make them smile.The very act of getting the phone out, and using the app, could be a first step in helping relieve the anxiety.
+Practical use of the app. The user:
+- Can read and use the exercises already submitted
+- Can edit the existing categories and add/or delete new personalized ones
+- Can edit existing exercises and and add/or delete new  personalized ones
+ 
+_For the Developer:_
+
+As a developer, I wanted to create a fully responsive app, using CRUD operations manipulate data, to get, post and store information from a database
+This website would help me practice my new coding skills, develop logic and understanding of data centric application.
+Development of coding skills using programming languages, frameworks and databases, to ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of being a useful function website. To misquote William Morris
+“Have nothing in your phone that you do not know to be useful, or believe to be beautiful.”
+The design for this website/app was mobile first. It was designed to be a phone application, while still functioning on larger screens.
