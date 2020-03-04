@@ -45,10 +45,12 @@ The app is a simple mindfulness app, that focuses more on storing information, t
 _For the Generic User:_
 
 I designed this app with a particular type of user in mind. A young teen, who suffers from anxiety.  They are old enough to have a mobile phone and are fairly tech savvy, particularly when it comes to apps. They are old enough to almost hate their parents, and not want to listen to them, or any other adult talk about anxiety. They could have suffered from anxiety for years, or are newly anxious, they have been taught grounding and breathing exercises and are sick to death of adults talking about ‘mindfulness’. However much they hate ‘mindfulness’, they know it can work, however, in the heat of the moment, they tend to forget the exercises, and hate feeling vulnerable and asking for help. (Just like adults, this app can be used by adults too.)
+
 Potential use of the app:
-Use the calming grounding and breathing exercises to help soothe anxious feelings
-Personalize the app, using it as a safe place to store mindfulness exercises that they know work
-Use the app to store random lists of things they find funny, that make them smile.The very act of getting the phone out, and using the app, could be a first step in helping relieve the anxiety.
+ - Use the calming grounding and breathing exercises to help soothe anxious feelings
+ - Personalize the app, using it as a safe place to store mindfulness exercises that they know work
+ - Use the app to store random lists of things they find funny, that make them smile.The very act of getting the phone out, and using the app, could be a first step in helping relieve the anxiety.
+
 Practical use of the app. The user:
 - Can read and use the exercises already submitted
 - Can edit the existing categories and add/or delete new personalized ones
@@ -57,7 +59,44 @@ Practical use of the app. The user:
 _For the Developer:_
 
 As a developer, I wanted to create a fully responsive app, using CRUD operations manipulate data, to get, post and store information from a database
-This website would help me practice my new coding skills, develop logic and understanding of data centric application.
-Development of coding skills using programming languages, frameworks and databases, to ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of being a useful function website. To misquote William Morris
+ - This website would help me practice my new coding skills, develop logic and understanding of data centric application.
+ - Development of coding skills using programming languages, frameworks and databases, to ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of being a useful function website. To misquote William Morris
 “Have nothing in your phone that you do not know to be useful, or believe to be beautiful.”
-The design for this website/app was mobile first. It was designed to be a phone application, while still functioning on larger screens.
+ - The design for this website/app was mobile first. It was designed to be a phone application, while still functioning on larger screens.
+
+ [image on mobile and desktop]
+
+----
+
+## Design
+
+#### Strategy & Scope:
+The website is designed to have a minimal and clean interface, using bright clean colours. A landing welcome page, with a series of linked pages for the different actions which include retrieving, iterating, editing, adding and deleting information.
+
+_Style:_
+ - Design - minimalist, clean design
+ - Fonts - I used Google Fonts to personalize the text. 
+ - Color Scheme - The color scheme is simple, and kept to a minimum to ensure full eligibility. 
+[add image of colour scheme]
+
+_Structure, Skeleton & Surface:_
+Keeping the pyramid of interface success, 'user - utility- usability',  from my last project, and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explanations of how to use the site, with a very deliberate colour scheme and simple fonts. 
+
+_Wireframing:_
+I created a wireframe for this website using Balsamiq
+[thumbnail image of wireframe]
+Link to PDF of wireframe
+
+_Detailed mockup:_
+I used Canva to create the original mockup of the website
+[thumbnail image of mockups, mobile and desktop]
+Link to PDF of mockup
+
+_Database Schema:_
+I used Canva to create the original mockup of the website
+Link to PDF of mockup
+
+
+[Back to Top](#table-of-contents)
+
+----
