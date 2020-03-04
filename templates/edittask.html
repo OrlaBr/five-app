@@ -1,5 +1,12 @@
 {% extends 'base.html' %} {% block content %}
-<h3>Edit Your Five!</h3>
+<section>
+<div class="container random">
+        <div class="row center-align">
+            <div class="index-bg">
+                <h4 class="random-header"><span class="white-text">Edit Your Five</span></h4>
+            </div>
+        </div>
+        <br>
 <div class="row">
 	<form action="{{ url_for('update_task', task_id=task._id) }}" method="POST" class="col s12">
 		<div class="row">
@@ -31,7 +38,7 @@
 					<label>Add your 5 here</label>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row center-align">
 				<button class="btn waves-effect waves-light" type="submit" name="action">Add to Five!
                     <i class="material-icons right">add</i>
                 </button>
@@ -39,5 +46,6 @@
 		</div>
 	</form>
 </div>
-
+</div>
+</section>
 {% endblock %}
