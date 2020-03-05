@@ -98,7 +98,7 @@ I used Canva to create a more detailed mockup of the website, in mobile and desk
 
  - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mockup.pdf" alt="pdf mockup of five app desktop layout">
 
-<img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app"><img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
+<img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app">     <img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
 
 
  - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mobile-mockup.pdf" alt="pdf mockup of five app mobile layout">
@@ -176,3 +176,80 @@ Starting with Python, I created a py file. I then created a series of html pages
 Once I had the basic operations of the data manipulation working I created a html file, and using Flask and Python, built up the website with the necessary html files. I styled the pages initially with standard Materialize CSS formatting.
 
 Once I had the functionality of the site, and all the CRUD operations in place, I started personalizing the styling of the site, using CSS. Working initially from the base.html file, and then working through each html file to create the uniformity I wanted.
+
+
+## Testing
+
+#### Manual Testing
+This web application has been manually tested with different scenarios that the user may experience.
+ - Homepage - Click on the brand logo in the navigation bar. Be directed to ‘home’ - index.html. 
+    - Redirect option - enter app
+ - RAM - basic information about the app. Options for further interaction       
+    - Redirect option - redirect to ‘add’ on ‘Add to 5’ page
+    - Option to read 3 existing records
+    - Redirect option - view all records on ‘Our’ 5 page
+ - Add your 5 - create record using existing categories. Option to add to category
+    - Select category from dropdown menu
+    - Add a name 
+    - Add a description
+    - Click button to add - redirect to ‘Edit 5’ with option to view/edit/delete names and descriptions
+    - Redirect option to add/edit/delete a category
+ - Categories - categories section
+    - View/Edit/Delete Categories names
+    - Add to Category button - redirects to ‘add a category’ page
+ - Add new Categories - 
+    - Form to add a new category name
+    - Add to Category button - redirects to ‘Add to Five’ page with new category in place
+ - Edit 5 - view all entries - names and descriptions
+    - View all current entries
+    - Options to edit/delete
+    - Redirect options to add another entry - back to ‘Add to 5’ page
+    - Redirect option to view all entries - ‘Our 5’ page
+ - Edit Categories - 
+    - Form to edit category
+    - Redirect back to Categories section
+ - Our 5 - 
+    - View all entries
+    - Redirect option to add new entry - redirect to ‘Add to Five’ page
+ - About - info about the app
+    - Redirect option to ‘RAM’ main page
+
+
+_Dev Tools_:
+
+    These tools were used throughout the project build.
+* Google Chrome DevTools ~ used throughout the project for testing and debugging
+* Firefox Developer Tools ~ used throughout the project for testing and debugging
+
+_Code Validation:_
+    I used a few online validators and formatters to check the code at regular intervals throughout the build.
+* <a href="https://validator.w3.org/">W3C HTML Validator</a> 
+* <a href="https://validator.w3.org/">W3C CSS Validator</a> 
+* <a href="https://jshint.com/">JSHint</a> - Javascript validator
+* <a href="http://pep8online.com/">Esprima</a> - PEP8 online
+* <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">Chrome Lens</a> - Accessibility validator
+
+_Notes_ 
+        - Warning on html pages - this is the because the validators do not recognise Flask script
+
+_Elements testing_
+
+| Feature      	| Elements                             	| Tested 	| Working 	 |
+|--------------	|--------------------------------------	|--------	|---------	 |
+| Navbar       	| html links                         	| ✔      	| ✔       	|
+| Mobile nav    | html links                           	| ✔      	| ✔       	|
+| HTML Links   	| page links                        	| ✔      	| ✔       	|
+| Database      | data presenting correctly         	| ✔      	| ✔       	|
+| CRUD      	| DATABASE OPERATIONS                   	                     |
+| Create   	    | ability to create records        	    | ✔      	| ✔       	|
+| Read        	| ability to read records               | ✔      	| ✔       	|
+| Update 	    | ability to update records             | ✔      	| ✔       	|
+| Delete 	    | ability to delete records             | ✔      	| ✔       	|
+
+<img src="ux/browser-testing.jpg" height="200" alt="Samples of cross browser testing">
+
+| Testing   | Cross-browser/ cross-device           |
+|---------	|--------------------------------------	|
+| Browser   |Chrome, Firefox, Safari, Opera         |
+| Device    | Mobile, Tablet, Desktop               |
+| Systems   | iOS, Android, Linux                   |
