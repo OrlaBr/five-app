@@ -64,7 +64,7 @@ _For the Developer:_
 
 As a developer, I wanted to create a fully responsive app, using CRUD operations manipulate data, to get, post and store information from a database
  - This website would help me practice my new coding skills, develop logic and understanding of data centric application.
- - Development of coding skills using programming languages, frameworks and databases, to ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of being a useful function website. To misquote William Morris
+ - Development of coding skills using programming languages, frameworks and databases, to ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of being a useful function website. To misquote the king of design himself, William Morris
 
 ```
 “Have nothing in your phone that you do not know to be useful, or believe to be beautiful.”
@@ -101,12 +101,12 @@ _Detailed mockup:_
 I used Canva to create a more detailed mockup of the website, in mobile and desktop view
 <img src="ux/five-landing-page.jpg" height="300" title="graphic of landing page of five app">
 
- - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mockup.pdf" alt="pdf mockup of five app desktop layout">
+ - PDF of desktop app mockup --<img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mockup.pdf" alt="pdf mockup of five app desktop layout">
 
 <img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app">     <img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
 
 
- - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mobile-mockup.pdf" alt="pdf mockup of five app mobile layout">
+ - PDF of desktop app mockup -- <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mobile-mockup.pdf" alt="pdf mockup of five app mobile layout">
 
 _Database Schema:_
 
@@ -305,7 +305,23 @@ Heroku does not automatically detect the IP and PORT that are set in the python 
 My app
 Settings
 Reveal Config Vars
-Set IP and PORT  ```
+Set IP and PORT  
+```
 
+#### Post Deployment Snag List:
 
+Once I had the app actively deployed in Heroku, I came across my first snag. The index page was deployed correctly, but I couldn't access the rest of my files correctly. I had added my PORT and IP variables, but I hadn’t added mongodb key and value. When you set your database key, or any other important key in an enviromental variable file, it is not uploaded to Github, this means it’s also not uploaded to Heroku. In order for Heroku to be able to detect the database you need to set the key and value of the database. 
 
+While in my app settings on the Heroku dashboard, I added my mongo db key and value
+```	
+KEY = MONGO_URI VALUE = mongodb+srv://root:<password>@myfirstcluster-dhnyc.mongodb.net/<app>?retryWrites=true&w=majority
+```
+
+Once I had added my mongodb key, the website loaded successfully, and I began a repeat of my previous testing, across browser and systems.
+I had a number of small bugs to fix after deployment.
+ - Missing metatags in header - added
+ - Spelling errors - fixed
+ - Console log errors:
+    - Favicon missing - A favicon is a small, iconic image that represents a website, in the address bar of a web browser. Although it seems insignificant, it's a small but important feature that users have come to expect to see. It adds an air of authenticity and authority to a website. I tried to use favicon generators, but they didn't work well. So, I created my own using Photoshop, added it to ux folder, and added links to the head section in my html pages. It's good practice to use favicons, and I wanted to add it to my set of web development toolbox. suggested from W3Schools
+    - Chrome 'SameSite' cookies error - New Chrome cookie policy. Added suggested Javascript code from Google Chrome Labs, but it didn't seem to work. I don't feel too bad about this error as it is such a new development, and if Google has this error showing, I think I'm ok for now. document.cookie = 'same-site-cookie=foo; SameSite=Lax'; document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure'
+ - Styling Error: With concentration on the details and the functionality of the website, it’s easy to miss the more obvious mistakes. Working through the CRUD operations, I realised I had not added the uniform CSS styling to the ‘Edit Your Five’  and ‘Edit Categories’ pages.
