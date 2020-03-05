@@ -5,7 +5,7 @@
 The principles behind the design are based on a simple ‘task manager app’, the user can input, edit, delete and personalise mindfulness routines that work. The inspiration for FIVE came from the 5 steps of a simple yet effective grounding exercise. Seeing many routies come in ‘5’ steps, 5 breaths, etc, I created FIVE as a simple app for young teens.
 The site was built using Gitpod, Github and Heroku. 
 
-You can see the deployed Heroku site here: <a href="https://five-5.herokuapp.com/" target="_blank">https://five-5.herokuapp.com/</a>
+You can see the deployed Heroku site here: <a href="https://five-5.herokuapp.com/" target="_blank">five-5.herokuapp.com</a>
 
 <img src="ux/app-devices.png" height="300" title="image of five app on different devices from mobile to large desktop">
 
@@ -182,6 +182,10 @@ Once I had the basic operations of the data manipulation working I created a htm
 Once I had the functionality of the site, and all the CRUD operations in place, I started personalizing the styling of the site, using CSS. Working initially from the base.html file, and then working through each html file to create the uniformity I wanted.
 
 
+[Back to Top](#table-of-contents)
+
+----
+
 ## Testing
 
 #### Manual Testing
@@ -336,25 +340,31 @@ After I had worked through my deployment snag list, I gave my app to the hardest
  - The  images I used on the main page were too childish. After  negative feedback about the type of imagery to use, I settled on calming natural pictures that could appeal to any age: simple images from nature
  - I had named the pages after the type of content it contained or in relation to the app, of what I would ultimately like, eg’ Our 5’, ‘My 5’, however this caused some confusion to a young user, so I renamed the navigation with simpier ‘view all’, ‘add new’ 
 
+[Back to Top](#table-of-contents)
 ----
 
 ## Future Development
+
 I really enjoyed working on this project, testing out my new knowledge of python, flask, and working with databases. Due to time constraints I didn't get to add all the features I would have liked, but am noting them here for future reference, so I can update the website after assessment
  - User sign up and login
  - More user control - a private user dashboard, with logged in sessions, to store records privately, to store favourites, and notes
- - Customized graphics
+ - Unique customized graphics
  - Options to add customized graphics to records, a selection from app, or the yuser can upload their own images.
- - Grading system for exercises, such as upvotes, add to favs. 
+ - Grading system, such as upvotes, add to favs. 
 
 -----
 ## Credits
 
- - Images copyright free from https://pixabay.com/.
+ - Images copyright free from <a href="https://pixabay.com/" target="_blank">Pixabay</a>
  - Icons copyright free from Materialize 
- - Created using free accounts with Github, Heroku, MongoDB
-  - Orla Breslin 2020
+ - Created using free accounts with Gitpod, Github, Heroku, MongoDB
+- [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)Orla Breslin 2020
 
+----
 ## Acknowledgements
  - Coding Tutorials:
     - <a href="https://codeinstitute.net/" target="_blank">Code Institute</a>course materials
  - Tadhg for his cruel but invaluable young teen user insight
+
+
+[Back to Top](#table-of-contents)
