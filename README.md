@@ -133,7 +133,6 @@ I used Canva to create the database schema of the app
  - User is able to read about the app ‘About’
  - User can navigate the app using the top nav bar on large screens and hamburger toggle side navbar
 
- [Back to Top](#table-of-contents)
  ----
 
 ## Technologies
@@ -260,3 +259,24 @@ _Elements testing_
 [Back to Top](#table-of-contents)
 
 ----
+## Deployment
+
+#### Github Deployment
+
+This website/app was developed using Gitpod and hosted using Github, generated from a template created by the Code Institute, and then deployed directly from the master branch. Regular changes were made and all updates were then committed to the master branch. The first or home page is called index.html, as servers expect index.html to be the name of the main file of a website folder. 
+In accordance to Flask formatting criteria, with specific named folders were created to hold relevant files
+ - app.py
+ - gitignore
+ - env.py
+ - templates: 
+    - html files
+    - Includes folder: partial files with underscore _messages.html. In my original idea, I was going to have alerts eg 'You have added a new category', but for the purpose of this project, I felt there was no need, it might actually distract from the project. However, I did learn how to insert partial files using this particular Flask method thanks to a Travesty Media tutorial on youtube https://www.youtube.com/watch?v=zRwy8gtgJ1A
+ - Static: 
+    - CSS folder with css stylesheet
+    - Images folder with relevant images
+ - gitignore
+ - app.py
+ - env.py
+ 
+Once I had the basic structure of the app complete I deployed to Heroku.
+
