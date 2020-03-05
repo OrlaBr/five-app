@@ -1,12 +1,13 @@
 
 # FIVE
 
-
 ‘FIVE’ is a wellness website/app focused on children and young teens that suffer from anxiety and stress. A much simpler format than current wellness apps, with the focus on the users own self-prescribed forms of ‘mindfulness’. Too many apps come with pre-prescribed ‘meditation’ routines that are an adults idea of what would be good for young teens, rather than creating an app that teens can use and edit themselves to suit their own personal needs.
 The principles behind the design are based on a simple ‘task manager app’, the user can input, edit, delete and personalise mindfulness routines that work. The inspiration for FIVE came from the 5 steps of a simple yet effective grounding exercise. Seeing many routies come in ‘5’ steps, 5 breaths, etc, I created FIVE as a simple app for young teens.
 The site was built using Gitpod, Github and Heroku. 
 
 You can see the deployed Heroku site here: https://five-5.herokuapp.com/
+
+<img src="ux/app-devices.jpg" height="300" title="image of five app on different devices from mobile to large desktop">
 
 ------
 
