@@ -93,12 +93,18 @@ Link to PDF of wireframe
 _Detailed mockup:_
 I used Canva to create a more detailed mockup of the website, in mobile and desktop view
 <img src="ux/five-landing-page.jpg" height="300" title="graphic of landing page of five app">
-<img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app"><img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
 
-PDF of mockup -- PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="pdf mockup of five app desktop layout">
+ - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mockup.pdf" alt="pdf mockup of five app desktop layout">
+
+<img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app">
+
+<img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
+
+ - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mobile-mockup.pdf" alt="pdf mockup of five app mobile layout">
 
 _Database Schema:_
-I used Canva to create the database schema of the website
+
+I used Canva to create the database schema of the app
 
 <img src="ux/five-database-schema.jpg" height="300" title="databases schema">
 
@@ -106,3 +112,45 @@ I used Canva to create the database schema of the website
 [Back to Top](#table-of-contents)
 
 ----
+
+## Features 
+
+
+#### Existing Features
+ - Opens on a landing pageSeries of html files created and linked in a logical format
+ - Connected to MongoDB database
+ - Links to a html page with a sample of records with the option to add or edit records 
+ - User is able to view the existing data - ‘Our 5’
+ - User is able to add/edit categories records ‘Add new Category’’
+ - User is able to add/edit names of records ‘ Add your own 5’
+ - User is able to edit/delete a record entry ‘Edit Five’
+ - User is able to see all entries including their own ‘Our 5’
+ - User is able to read about the app ‘About’
+ - User can navigate the app using the top nav bar on large screens and hamburger side navbar
+
+ 
+ ----
+
+## Technologies
+- Programming languages: 
+        - HTML5 - used to build the foundation of the app and includes links to Materialize, Materialize JS, CSS, and Google Fonts.
+        - CSS3 - styling
+        - Javascript - interactive functionality to run Materialize framework
+        - Python - backend functionality connecting html pages, Flask with the cloud database.
+ - CSS Framework: <a href="https://materializecss.com/">Materialize</a>
+ - Code Editor: <a href="https://gitpod.com">Gitpod</a> ~ I used Gitpod to build the full website. 
+ - Web Application: <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>
+ - Database  <a href="https://www.mongodb.com/">MongoDB</a> 
+ - Hosting: 
+            * <a href="https://github.com">Github</a> ~ Github is where I am hosting my deployed static website
+            * <a href="https://www.heroku.com/">Github</a> ~ Heroku is where I am hosting my deployed dynamic website
+ 
+
+*Other web applications used:*
+
+- <a href="https://www.canva.com/">Canva<a/> - to create a detailed mock-up
+- <a href="https://www.adobe.com/">Adobe Photoshop<a/> - to edit the photographs
+- <a href="https://fonts.google.com/">Google Fonts<a/> - stylesheet linked to customize fonts
+
+
+---
