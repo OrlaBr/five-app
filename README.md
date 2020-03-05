@@ -6,7 +6,7 @@
 The principles behind the design are based on a simple ‘task manager app’, the user can input, edit, delete and personalise mindfulness routines that work. The inspiration for FIVE came from the 5 steps of a simple yet effective grounding exercise. Seeing many routies come in ‘5’ steps, 5 breaths, etc, I created FIVE as a simple app for young teens.
 The site was built using Gitpod, Github and Heroku. 
 
-You can see the deployed Heroku site here: “https://five-5.herokuapp.com/”
+You can see the deployed Heroku site here: https://five-5.herokuapp.com/
 
 ------
 
@@ -36,6 +36,8 @@ I carried out some research on creating apps for children and teens, and found l
  - https://www.toptal.com/designers/interactive/guide-to-apps-for-children
  - https://www.invisionapp.com/inside-design/building-apps-for-children/
  - https://www.uxmatters.com/mt/archives/2014/07/design-for-kids-digital-products-for-playing-and-learning.php
+
+ <img src="ux/kid-toptal.jpg" height="300" title="graphic with drawing of child and points about kids using apps">
 
  Learning outcomes include using clean design with bright colours, simplicity. Obvious consistency across the design, a reason to use the app, let them be able to make mistakes, and easily fix them. A learning process through using the app.
 
