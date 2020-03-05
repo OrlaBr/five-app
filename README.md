@@ -93,8 +93,9 @@ I used Canva to create the original mockup of the website
 Link to PDF of mockup
 
 _Database Schema:_
-I used Canva to create the original mockup of the website
-Link to PDF of mockup
+I used Canva to create the database schema of the website
+
+<img src="five-database-schema.jpg" height="300" title="databases schema">
 
 
 [Back to Top](#table-of-contents)
