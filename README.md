@@ -86,19 +86,20 @@ _Structure, Skeleton & Surface:_
 Keeping the pyramid of interface success, 'user - utility- usability',  from my last project, and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explanations of how to use the site, with a very deliberate colour scheme and simple fonts. 
 
 _Wireframing:_
+
 I created a wireframe for this website using Balsamiq
 [thumbnail image of wireframe]
 Link to PDF of wireframe
 
 _Detailed mockup:_
+
 I used Canva to create a more detailed mockup of the website, in mobile and desktop view
 <img src="ux/five-landing-page.jpg" height="300" title="graphic of landing page of five app">
 
  - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mockup.pdf" alt="pdf mockup of five app desktop layout">
 
-<img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app">
+<img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app"><img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
 
-<img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
 
  - PDF of desktop app mockup -- PDF of <img src="https://github.com/OrlaBr/five-app/blob/master/ux/five-mobile-mockup.pdf" alt="pdf mockup of five app mobile layout">
 
@@ -117,7 +118,8 @@ I used Canva to create the database schema of the app
 
 
 #### Existing Features
- - Opens on a landing pageSeries of html files created and linked in a logical format
+ - Opens on a landing page
+ - Series of html files created and linked in a logical format
  - Connected to MongoDB database
  - Links to a html page with a sample of records with the option to add or edit records 
  - User is able to view the existing data - ‘Our 5’
@@ -126,17 +128,17 @@ I used Canva to create the database schema of the app
  - User is able to edit/delete a record entry ‘Edit Five’
  - User is able to see all entries including their own ‘Our 5’
  - User is able to read about the app ‘About’
- - User can navigate the app using the top nav bar on large screens and hamburger side navbar
+ - User can navigate the app using the top nav bar on large screens and hamburger toggle side navbar
 
  
  ----
 
 ## Technologies
 - Programming languages: 
-        - HTML5 - used to build the foundation of the app and includes links to Materialize, Materialize JS, CSS, and Google Fonts.
-        - CSS3 - styling
-        - Javascript - interactive functionality to run Materialize framework
-        - Python - backend functionality connecting html pages, Flask with the cloud database.
+    - HTML5 - used to build the foundation of the app and includes links to Materialize, Materialize JS, CSS, and Google Fonts.
+    - CSS3 - styling
+    - Javascript - interactive functionality to run Materialize framework
+    - Python - backend functionality connecting html pages, Flask with the cloud database.
  - CSS Framework: <a href="https://materializecss.com/">Materialize</a>
  - Code Editor: <a href="https://gitpod.com">Gitpod</a> ~ I used Gitpod to build the full website. 
  - Web Application: <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>
@@ -154,3 +156,23 @@ I used Canva to create the database schema of the app
 
 
 ---
+## Building	
+
+#### Website Build
+Before starting to build the app in Gitpod, I needed to create a new database in MongoDb. I created the database 'five-app' and started a collection. By doing this before starting the app build, through the MongoDB cloud interface, it gave me something to work with when creating the data retrieval in the html pages. After setting up the database, I created a collection of categories and tasks. The categories would hold the tasks, the tasks would hold a name and description. Once I had my pages and connections set up, it was then easy to add data to the database from Gitpod
+
+```{"_id":{"$oid":"5e54de3e1c9d44000065f8dd"},
+"category_name":"Grounding"
+"task_name":"5 Senses",
+"task_description":" 5 things you see, 4 things you hear, 3 things you smell, 2 things you can touch, 1 thing you taste"}
+```
+
+The website was built using Gitpod. I relied heavily on Code Institute tutorials in creating the basic build, following the principles of the task manager app. One of the reasons I followed the tutorials again, was to make sure I understood them fully, especially in relation to using Python and Flask. The functionality of my website is the same as a task manager app, in relation to CRUD operations. Once I had the basic functionality working, I was able to personalize it to suit my project.
+
+#### Sections Build
+
+Starting with Python, I created a py file. I then created a series of html pages that would perform the CRUD operations that I wanted the user to be able to do, following my database schema and mockups. I used environmental variables to connect to my MongoDB database, to hide my password.
+
+Once I had the basic operations of the data manipulation working I created a html file, and using Flask and Python, built up the website with the necessary html files. I styled the pages initially with standard Materialize CSS formatting.
+
+Once I had the functionality of the site, and all the CRUD operations in place, I started personalizing the styling of the site, using CSS. Working initially from the base.html file, and then working through each html file to create the uniformity I wanted.
