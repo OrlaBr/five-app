@@ -1,32 +1,34 @@
-{% extends 'base.html' %}
-{% block content %}
-
+{% extends 'base.html' %} {% block content %}
 <section>
     <div class="container">
+        <!--about heading -->
         <div class="row about">
             <div class="center-align index-bg about-header">
                 <h4 class="random-header"><span class="white-text">About FIVE <i class="material-icons">pan_tool</i></span></h4>
             </div>
+            <!--about text -->
             <div class="row center-align about-text">
-            <p>Anxiety symptoms are common in children and adolescents, with 10-20% of school-aged children experiencing anxiety symptoms. Children can learn to cope with anxiety by learning a few crucial skills. Teaching children and adolescents how to manage their own anxiety can go a long way in helping them feel better.</p>
-<p>FIVE can help kids learn ways to manage their fears and reduce their anxieties. It teaches our kids coping strategies so they can use them to help them deal with whatever troubling event they encounter as well as boosting their resilience for life. They can use the exercises or they can add their own favourites. Whatever makes them feel less anxious, and calmer. 
-            </p>
+                <p>Anxiety symptoms are common in children and adolescents, with 10-20% of school-aged children experiencing anxiety symptoms. Children can learn to cope with anxiety by learning a few crucial skills. Teaching children and adolescents how to manage their own anxiety can go a long way in helping them feel better.</p>
+                <p>FIVE can help kids learn ways to manage their fears and reduce their anxieties. It teaches our kids coping strategies so they can use them to help them deal with whatever troubling event they encounter as well as boosting their resilience for life. They can use the exercises or they can add their own favourites. Whatever makes them feel less anxious, and calmer.
+                </p>
             </div>
-                        <div class="center-align">
+            <div class="center-align">
                 <img src="static/img/ram-emoji.png" alt="emoji of a ram/male sheep" class=" responsive-img">
             </div>
         </div>
     </div>
-        <div class="center-align index-btn about-btn">
-            <a href="{{ url_for('random') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Take me to RAM</a>
-        </div> 
+    <!--link to info page -->
+    <div class="center-align index-btn about-btn">
+        <a href="{{ url_for('random') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>Take me to RAM</a>
+    </div>
 </section>
-    <footer class="page-footer white">
-        <div class="footer-copyright">
-            <div class="container orange-text center-align">
-                © 2020 FIVE
-            </div>
+ <!--footer-->
+<footer class="page-footer white">
+    <div class="footer-copyright">
+        <div class="container orange-text center-align">
+            © 2020 FIVE
         </div>
-    </footer>
+    </div>
+</footer>
 
 {% endblock %}

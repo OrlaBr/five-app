@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <section>
-    <!--random heading section -->
+    <!--heading section -->
     <div class="container random">
         <div class="row center-align">
             <div class="index-bg">
@@ -18,7 +18,7 @@
             </div>
         </div>
     </div>
-    <!--add your ram section -->
+    <!--'add your ram' form section -->
     <div class="container">
         <p class="center-align random-cat">Select a Category you want to add to, add a Name, then add your Fav 5!</p>
         <div class="row center-align">
@@ -57,15 +57,17 @@
                     </div>
                 </div>
             </form>
-            </div>
-            <div class="add_ram_btn center-align">
-                <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
-                <h6><strong>Can't find a category to put your fav 5 into? Have a look at our full list of Categories</strong></h6>
-                <div class="index-btn">
-                    <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>See all categories</a>
-                </div>
+        </div>
+        <!--/formsection -->
+        <!--bottom section -->
+        <div class="add_ram_btn center-align">
+            <span class="indigo-text add-star"><i class="medium material-icons stars">stars</i></span>
+            <h6><strong>Can't find a category to put your fav 5 into? Have a look at our full list of Categories</strong></h6>
+            <div class="index-btn">
+                <a href="{{ url_for('get_categories') }}" class="waves-effect waves-light btn"><i class="material-icons right">call_made</i>See all categories</a>
             </div>
         </div>
+    </div>
 </section>
 
 {% endblock %}

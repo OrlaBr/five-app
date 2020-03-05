@@ -2,66 +2,67 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="App, Anxiety, HTML, Flask, Python">
-    <meta name="description" content="Anxiety app for kids">
-    <meta name="author" content="Orla Breslin">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css" />
-    <link rel="icon" type="image/png" href="static/img/five-favicon.png">
-    <title>Five!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="keywords" content="App, Anxiety, HTML, Flask, Python">
+	<meta name="description" content="Anxiety app for kids">
+	<meta name="author" content="Orla Breslin">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}" type="text/css"/>
+	<link rel="icon" type="image/png" href="static/img/five-favicon.png">
+	<title>Five!</title>
 </head>
 
 <body>
-    <!----Navbar--->
-    <header>
-        <nav>
-            <div class="nav-wrapper blue-grey lighten-5">
-                <a href="{{ url_for('get_index') }}" class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span></a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"><span class="orange-text">menu</span></i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
-                    <li><a href="{{ url_for('viewtasks') }}"><span class="orange-text">View All</span></a></li>
-                    <li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add new 5</span></a></li>
-                    <li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a>
-                    </li>
-                    <li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
+	<!----Navbar--->
+	<header>
+		<nav>
+			<div class="nav-wrapper blue-grey lighten-5">
+				<a href="{{ url_for('get_index') }}"
+					class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span></a>
+				<a href="#" data-activates="mobile-demo"
+					class="button-collapse"><i class="material-icons"><span class="orange-text">menu</span></i></a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
+					<li><a href="{{ url_for('viewtasks') }}"><span class="orange-text">View All</span></a></li>
+					<li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add new 5</span></a></li>
+					<li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a>
+					</li>
+					<li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
 
-                </ul>
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
-                    <li><a href="{{ url_for('viewtasks') }}"><span class="orange-text">View all</span></a></li>
-                    <li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add new 5</span></a></li>
-                    <li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a>
-                    </li>
-                    <li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+				</ul>
+				<ul class="side-nav" id="mobile-demo">
+					<li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
+					<li><a href="{{ url_for('viewtasks') }}"><span class="orange-text">View all</span></a></li>
+					<li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add new 5</span></a></li>
+					<li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a>
+					</li>
+					<li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
 
-    <!----jinja block---->
-    <div class="container">
-        {% block content%} {% endblock %}
-    </div>
+	<!----jinja block---->
+	<div class="container">
+		{% block content%} {% endblock %}
+	</div>
 
-    <!----footer---->
 
-    <!----javascript/jquery---->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function() {
+	<!----javascript/jquery---->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function() {
             $('.collapsible').collapsible();
             $('select').material_select();
             $(".button-collapse").sideNav();
         });
-    </script>
+	</script>
 </body>
 
 </html>

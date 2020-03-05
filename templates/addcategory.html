@@ -1,11 +1,13 @@
 {% extends 'base.html'%} {% block content %}
 <section>
     <div class="container add-categories">
+        <!-- heading section -->
         <div class="row center-align">
             <div class="index-bg">
                 <h4 class="random-header"><span class="white-text">Add a new Category</span></h4>
             </div>
         </div>
+        <!--add category  form section -->
         <div class="row">
             <form action="{{ url_for('insert_category') }}" method="POST" class="col s12">
                 <div class="row">
@@ -20,6 +22,8 @@
                     </button>
                 </div>
             </form>
+            <!--/form section -->
+            <!--bottom image and link -->
             <div class="center-align">
                 <div>
                     <img src="static/img/ram2.png" alt="emoji of a ram/male sheep" class="responsive-img">
