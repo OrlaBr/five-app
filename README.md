@@ -91,9 +91,11 @@ I created a wireframe for this website using Balsamiq
 Link to PDF of wireframe
 
 _Detailed mockup:_
-I used Canva to create the original mockup of the website
+I used Canva to create a more detailed mockup of the website, in mobile and desktop view
 <img src="ux/five-landing-page.jpg" height="300" title="graphic of landing page of five app">
-PDF of mockup - <img src="https://f6dd2190-79b9-4808-bc88-3e0cdb9e5c66.ws-eu01.gitpod.io/#/workspace/five-app" alt="pdf mockup of five app project">
+<img src="ux/mobile-mock-up.jpg" height="300" title="graphic of mobile landing page of five app"><img src="ux/mobile-mock-up2.jpg" height="300" title="graphic of mobile adding entry section of five app">
+
+PDF of mockup -- PDF of <img src="https://github.com/OrlaBr/ogham-mapping-project/blob/master/ux/ogham-in-3d.pdf" alt="pdf mockup of five app desktop layout">
 
 _Database Schema:_
 I used Canva to create the database schema of the website
