@@ -38,6 +38,7 @@ I carried out some research on creating apps for children and teens, and found l
  - https://www.uxmatters.com/mt/archives/2014/07/design-for-kids-digital-products-for-playing-and-learning.php
 
  <img src="ux/kid-toptal.jpg" height="300" title="graphic with drawing of child and points about kids using apps">
+ (graphic from toptal article, link above)
 
  Learning outcomes include using clean design with bright colours, simplicity. Obvious consistency across the design, a reason to use the app, let them be able to make mistakes, and easily fix them. A learning process through using the app.
 
@@ -91,8 +92,8 @@ Link to PDF of wireframe
 
 _Detailed mockup:_
 I used Canva to create the original mockup of the website
-[thumbnail image of mockups, mobile and desktop]
-Link to PDF of mockup
+<img src="ux/five-landing-page" height="300" title="graphic of landing page of five app">
+PDF of mockup - <img src="https://f6dd2190-79b9-4808-bc88-3e0cdb9e5c66.ws-eu01.gitpod.io/#/workspace/five-app" alt="pdf mockup of five app project">
 
 _Database Schema:_
 I used Canva to create the database schema of the website
