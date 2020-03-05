@@ -328,10 +328,33 @@ I had a number of small bugs to fix after deployment.
     - "Enable JavaScript source maps"
     - "Enable CSS source maps" 
     - Refresh Chrome
-    (answer found on <a href="https://stackoverflow.com/questions/44267503/devtools-failed-to-parse-sourcemap" target="_blank">StackOverflow</a>
-    - Styling Error: With concentration on the details and the functionality of the website, it’s easy to miss the more obvious mistakes. Working through the CRUD operations, I realised I had not added the uniform CSS styling to the ‘Edit Your Five’  and ‘Edit Categories’ pages.
+    (answer found on <a href="https://stackoverflow.com/questions/44267503/devtools-failed-to-parse-sourcemap" target="_blank">StackOverflow</a>)
+- Styling Error: With concentration on the details and the functionality of the website, it’s easy to miss the more obvious mistakes. Working through the CRUD operations, I realised I had not added the uniform CSS styling to the ‘Edit Your Five’  and ‘Edit Categories’ pages.
 
 #### User Snag List:
 After I had worked through my deployment snag list, I gave my app to the hardest critic I could find, and one of my user stories -  a young teenage boy. He thought the idea was lame, but ultimately worked through the functions easily, and then laughed at the option of being able enter his own favourite facts. Something that made him smile (which was the ultimate goal of the app). Overall the app got approval of simplicity of ease, the ability to edit and delete was crucial, however I failed on a few items:
  - The  images I used on the main page were too childish. After  negative feedback about the type of imagery to use, I settled on calming natural pictures that could appeal to any age: simple images from nature
  - I had named the pages after the type of content it contained or in relation to the app, of what I would ultimately like, eg’ Our 5’, ‘My 5’, however this caused some confusion to a young user, so I renamed the navigation with simpier ‘view all’, ‘add new’ 
+
+----
+
+## Future Development
+I really enjoyed working on this project, testing out my new knowledge of python, flask, and working with databases. Due to time constraints I didn't get to add all the features I would have liked, but am noting them here for future reference, so I can update the website after assessment
+ - User sign up and login
+ - More user control - a private user dashboard, with logged in sessions, to store records privately, to store favourites, and notes
+ - Customized graphics
+ - Options to add customized graphics to records, a selection from app, or the yuser can upload their own images.
+ - Grading system for exercises, such as upvotes, add to favs. 
+
+-----
+## Credits
+
+ - Images copyright free from https://pixabay.com/.
+ - Icons copyright free from Materialize 
+ - Created using free accounts with Github, Heroku, MongoDB
+  - Orla Breslin 2020
+
+## Acknowledgements
+ - Coding Tutorials:
+    - <a href="https://codeinstitute.net/" target="_blank">Code Institute</a>course materials
+ - Tadhg for his cruel but invaluable young teen user insight
