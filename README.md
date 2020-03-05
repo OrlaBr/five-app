@@ -177,9 +177,9 @@ The website was built using Gitpod. I relied heavily on Code Institute tutorials
 
 Starting with Python, I created a py file. I then created a series of html pages that would perform the CRUD operations that I wanted the user to be able to do, following my database schema and mockups. I used environmental variables to connect to my MongoDB database, to hide my password.
 
-Once I had the basic operations of the data manipulation working I created a html file, and using Flask and Python, built up the website with the necessary html files. I styled the pages initially with standard Materialize CSS formatting.
+Once I had the basic operations of the data manipulation working I created a html file, and using Flask and Python, built up the website with the necessary html files. I styled the pages using components and forms Materialize front-end framework.
 
-Once I had the functionality of the site, and all the CRUD operations in place, I started personalizing the styling of the site, using CSS. Working initially from the base.html file, and then working through each html file to create the uniformity I wanted.
+Once I had the functionality of the site, and all the CRUD operations in place, I started personalizing the styling of the site, using customized CSS. Working initially from the base.html file, and then working through each html file to create the uniformity I wanted.
 
 
 [Back to Top](#table-of-contents)
@@ -325,6 +325,7 @@ Once I had added my mongodb key, the website loaded successfully, and I began a 
 I had a number of small bugs to fix after deployment.
  - Missing metatags in header - added
  - Spelling errors - fixed
+ - Image error - Images in the cards were not adjusting well between desktop and mobile view, so I added a CSS min height and edited text of titles
  - Console log errors:
     - Favicon missing - A favicon is a small, iconic image that represents a website, in the address bar of a web browser. Although it seems insignificant, it's a small but important feature that users have come to expect to see. It adds an air of authenticity and authority to a website. I tried to use favicon generators, but they didn't work well. So, I created my own using Photoshop, added it to ux folder, and added links to the head section in my html pages. It's good practice to use favicons, and I wanted to add it to my set of web development toolbox. suggested from W3Schools
     - Chrome 'SameSite' cookies error - New Chrome cookie policy. Added suggested Javascript code from Google Chrome Labs, but it didn't seem to work. I don't feel too bad about this error as it is such a new development, and if Google has this error showing, I think I'm ok for now. document.cookie = 'same-site-cookie=foo; SameSite=Lax'; document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure'
