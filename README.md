@@ -65,12 +65,13 @@ _For the Developer:_
 As a developer, I wanted to create a fully responsive app, using CRUD operations manipulate data, to get, post and store information from a database
  - This website would help me practice my new coding skills, develop logic and understanding of data centric application.
  - Development of coding skills using programming languages, frameworks and databases, to ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of being a useful function website. To misquote William Morris
+
+```
 “Have nothing in your phone that you do not know to be useful, or believe to be beautiful.”
+```
  - The design for this website/app was mobile first. It was designed to be a phone application, while still functioning on larger screens.
 
  [Back to Top](#table-of-contents)
-
-
 
 
 ----
@@ -163,9 +164,10 @@ I used Canva to create the database schema of the app
 #### Website Build
 Before starting to build the app in Gitpod, I needed to create a new database in MongoDb. I created the database 'five-app' and started a collection. By doing this before starting the app build, through the MongoDB cloud interface, it gave me something to work with when creating the data retrieval in the html pages. After setting up the database, I created a collection of categories and tasks. The categories would hold the tasks, the tasks would hold a name and description. Once I had my pages and connections set up, it was then easy to add data to the database from Gitpod
 
-```{"_id":{"$oid":"5e54de3e1c9d44000065f8dd"},
+```
+{"_id": ObjectId("5e54de3e1c9d44000065f8dd")
 "category_name":"Grounding"
-"task_name":"5 Senses",
+"task_name":"5 Senses"
 "task_description":" 5 things you see, 4 things you hear, 3 things you smell, 2 things you can touch, 1 thing you taste"}
 ```
 
@@ -274,9 +276,36 @@ In accordance to Flask formatting criteria, with specific named folders were cre
  - Static: 
     - CSS folder with css stylesheet
     - Images folder with relevant images
- - gitignore
- - app.py
- - env.py
  
 Once I had the basic structure of the app complete I deployed to Heroku.
+
+##### Heroku Deployment
+
+Github is a great resource for deploying web applications but as it only hosts static files it cannot be used to host a dynamic application, in this instance, with database functionality. 
+Heroku is being used to host the deployed dynamic site. 
+In order to deploy to Heroku, it is necessary to do a few actions.
+1. Create a requirments.txt file to ensure Heroku knows what programmes are being used. You can do this through the console log.
+```  
+pip3 freeze --local > requirements.txt 
+```
+2. It is also necessary to create a Procfile. A  Procfile  specifies the commands that are executed by the app on startup. It is a simple text file, and it must be in the root directory. Again you can create it through the command line. 
+``` 
+echo web: python run.py > Procfile 
+ ```
+3. You must then create the add and commit the file and then push to Heroku master. You will be asked to login to heroku accounts.
+``` 
+git add .
+git commit -m "initial commit"
+git push -u heroku master
+heroku ps:scale web=1
+```
+
+Heroku does not automatically detect the IP and PORT that are set in the python file, and must be manually included in the settings of Heroku. You do this by setting the keys and values in Config Vars
+``` Heroku
+My app
+Settings
+Reveal Config Vars
+Set IP and PORT  ```
+
+
 
