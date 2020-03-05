@@ -68,9 +68,11 @@ As a developer, I wanted to create a fully responsive app, using CRUD operations
 “Have nothing in your phone that you do not know to be useful, or believe to be beautiful.”
  - The design for this website/app was mobile first. It was designed to be a phone application, while still functioning on larger screens.
 
- [image on mobile and desktop]
+ [Back to Top](#table-of-contents)
 
-[Back to Top](#table-of-contents)
+
+
+
 ----
 
 ## Design
@@ -110,7 +112,6 @@ _Database Schema:_
 I used Canva to create the database schema of the app
 
 <img src="ux/five-database-schema.jpg" height="300" title="databases schema">
-
 
 [Back to Top](#table-of-contents)
 
@@ -218,8 +219,7 @@ This web application has been manually tested with different scenarios that the 
 
 
 _Dev Tools_:
-
-    These tools were used throughout the project build.
+These tools were used throughout the project build.
 * Google Chrome DevTools ~ used throughout the project for testing and debugging
 * Firefox Developer Tools ~ used throughout the project for testing and debugging
 
@@ -248,7 +248,7 @@ _Elements testing_
 | Update 	    | ability to update records             | ✔      	| ✔       	|
 | Delete 	    | ability to delete records             | ✔      	| ✔       	|
 
-<img src="ux/browser-testing.jpg" height="200" alt="Samples of cross browser testing">
+<img src="ux/app-devices.png" height="200" title="image of five-app on different devices from mobile to large desktop">
 
 | Testing   | Cross-browser/ cross-device           |
 |---------	|--------------------------------------	|
