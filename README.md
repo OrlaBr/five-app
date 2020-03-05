@@ -92,7 +92,7 @@ Link to PDF of wireframe
 
 _Detailed mockup:_
 I used Canva to create the original mockup of the website
-<img src="ux/five-landing-page" height="300" title="graphic of landing page of five app">
+<img src="ux/five-landing-page.jpg" height="300" title="graphic of landing page of five app">
 PDF of mockup - <img src="https://f6dd2190-79b9-4808-bc88-3e0cdb9e5c66.ws-eu01.gitpod.io/#/workspace/five-app" alt="pdf mockup of five app project">
 
 _Database Schema:_
