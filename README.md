@@ -7,7 +7,7 @@ The site was built using Gitpod, Github and Heroku.
 
 You can see the deployed Heroku site here: https://five-5.herokuapp.com/
 
-<img src="ux/app-devices.jpg" height="300" title="image of five app on different devices from mobile to large desktop">
+<img src="ux/app-devices.png" height="300" title="image of five app on different devices from mobile to large desktop">
 
 ------
 
