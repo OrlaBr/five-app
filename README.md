@@ -5,7 +5,7 @@
 The principles behind the design are based on a simple ‘task manager app’, the user can input, edit, delete and personalise mindfulness routines that work. The inspiration for FIVE came from the 5 steps of a simple yet effective grounding exercise. Seeing many routies come in ‘5’ steps, 5 breaths, etc, I created FIVE as a simple app for young teens.
 The site was built using Gitpod, Github and Heroku. 
 
-You can see the deployed Heroku site here: https://five-5.herokuapp.com/
+You can see the deployed Heroku site here: <a href="https://five-5.herokuapp.com/" target="_blank">https://five-5.herokuapp.com/</a>
 
 <img src="ux/app-devices.png" height="300" title="image of five app on different devices from mobile to large desktop">
 
@@ -142,20 +142,20 @@ I used Canva to create the database schema of the app
     - CSS3 - styling
     - Javascript - interactive functionality to run Materialize framework
     - Python - backend functionality connecting html pages, Flask with the cloud database.
- - CSS Framework: <a href="https://materializecss.com/">Materialize</a>
- - Code Editor: <a href="https://gitpod.com">Gitpod</a> ~ I used Gitpod to build the full website. 
- - Web Application: <a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a>
- - Database  <a href="https://www.mongodb.com/">MongoDB</a> 
+ - CSS Framework: <a href="https://materializecss.com/" target="_blank">Materialize</a>
+ - Code Editor: <a href="https://gitpod.com" target="_blank">Gitpod</a> ~ I used Gitpod to build the full website. 
+ - Web Application: <a href="https://flask.palletsprojects.com/en/1.1.x/" target="_blank">Flask</a>
+ - Database  <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> 
  - Hosting: 
-            * <a href="https://github.com">Github</a> ~ Github is where I am hosting my deployed static website
-            * <a href="https://www.heroku.com/">Github</a> ~ Heroku is where I am hosting my deployed dynamic website
+            * <a href="https://github.com" target="_blank">Github</a> ~ Github is where I am hosting my deployed static website
+            * <a href="https://www.heroku.com/" target="_blank">Github</a> ~ Heroku is where I am hosting my deployed dynamic website
  
 
 *Other web applications used:*
 
-- <a href="https://www.canva.com/">Canva<a/> - to create a detailed mock-up
-- <a href="https://www.adobe.com/">Adobe Photoshop<a/> - to edit the photographs
-- <a href="https://fonts.google.com/">Google Fonts<a/> - stylesheet linked to customize fonts
+- <a href="https://www.canva.com/" target="_blank">Canva<a/> - to create a detailed mock-up
+- <a href="https://www.adobe.com/" target="_blank">Adobe Photoshop<a/> - to edit the photographs
+- <a href="https://fonts.google.com/" target="_blank">Google Fonts<a/> - stylesheet linked to customize fonts
 
 
 ---
@@ -226,11 +226,11 @@ These tools were used throughout the project build.
 
 _Code Validation:_
     I used a few online validators and formatters to check the code at regular intervals throughout the build.
-* <a href="https://validator.w3.org/">W3C HTML Validator</a> 
-* <a href="https://validator.w3.org/">W3C CSS Validator</a> 
-* <a href="https://jshint.com/">JSHint</a> - Javascript validator
-* <a href="http://pep8online.com/">Esprima</a> - PEP8 online
-* <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">Chrome Lens</a> - Accessibility validator
+* <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> 
+* <a href="https://validator.w3.org/" target="_blank">W3C CSS Validator</a> 
+* <a href="https://jshint.com/" target="_blank">JSHint</a> - Javascript validator
+* <a href="http://pep8online.com/" target="_blank">PEP8</a> - Python validator
+* <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en" target="_blank">Chrome Lens</a> - Accessibility validator
 
 _Notes_ 
         - Warning on html pages - this is the because the validators do not recognise Flask script
@@ -328,4 +328,4 @@ I had a number of small bugs to fix after deployment.
  - DevTools failed to parse SourceMap: This is due to the settings of chrome, o fix it go to Developer Tools Settings of Chrome, and uncheck:
     - "Enable JavaScript source maps"
     - "Enable CSS source maps" 
-    (answer on [stackoverflow](https://stackoverflow.com/questions/44267503/devtools-failed-to-parse-sourcemap)
+    (answer found on <a href="https://stackoverflow.com/questions/44267503/devtools-failed-to-parse-sourcemap" target="_blank">StackOverflow</a>
