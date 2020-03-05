@@ -70,6 +70,7 @@ As a developer, I wanted to create a fully responsive app, using CRUD operations
 
  [image on mobile and desktop]
 
+[Back to Top](#table-of-contents)
 ----
 
 ## Design
@@ -131,7 +132,7 @@ I used Canva to create the database schema of the app
  - User is able to read about the app ‘About’
  - User can navigate the app using the top nav bar on large screens and hamburger toggle side navbar
 
- 
+ [Back to Top](#table-of-contents)
  ----
 
 ## Technologies
@@ -254,3 +255,8 @@ _Elements testing_
 | Browser   |Chrome, Firefox, Safari, Opera         |
 | Device    | Mobile, Tablet, Desktop               |
 | Systems   | iOS, Android, Linux                   |
+
+
+[Back to Top](#table-of-contents)
+
+----
