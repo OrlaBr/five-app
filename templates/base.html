@@ -23,9 +23,11 @@
 		<nav>
 			<div class="nav-wrapper blue-grey lighten-5">
 				<a href="{{ url_for('get_index') }}"
-					class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span></a>
+					class="brand-logo"><span class="orange-text"><i class="material-icons">pan_tool</i>FIVE</span>
+                </a>
 				<a href="#" data-activates="mobile-demo"
-					class="button-collapse"><i class="material-icons"><span class="orange-text">menu</span></i></a>
+					class="button-collapse"><i class="material-icons"><span class="orange-text">menu</span></i>
+                </a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
 					<li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
 					<li><a href="{{ url_for('viewtasks') }}"><span class="orange-text">View All</span></a></li>
@@ -33,18 +35,17 @@
 					<li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a>
 					</li>
 					<li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
-
-				</ul>
-				<ul class="side-nav" id="mobile-demo">
-					<li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
-					<li><a href="{{ url_for('viewtasks') }}"><span class="orange-text">View all</span></a></li>
-					<li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add new 5</span></a></li>
-					<li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a>
-					</li>
-					<li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
 				</ul>
 			</div>
 		</nav>
+        	<ul class="side-nav white" id="slide-out">
+				<li><a href="{{ url_for('random') }}"><span class="orange-text">RAM</span></a></li>
+				<li><a href="{{ url_for('viewtasks') }}"><span class="orange-text">View All</span></a></li>
+				<li><a href="{{ url_for('add_ram') }}"><span class="orange-text">Add new 5</span></a></li>
+				<li><a href="{{ url_for('get_categories') }}"><span class="orange-text">Add new Category</span></a>
+				</li>
+				<li><a href="{{ url_for('about') }}"><span class="orange-text">About</span></a></li>
+			</ul>
 	</header>
 
 	<!----jinja block---->
@@ -60,7 +61,10 @@
 		$(document).ready(function() {
             $('.collapsible').collapsible();
             $('select').material_select();
-            $(".button-collapse").sideNav();
+            $(".button-collapse").sideNav({
+                closeOnClick: true
+                }
+            );
         });
 	</script>
 </body>

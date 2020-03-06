@@ -316,9 +316,7 @@ Set IP and PORT
 
 I also changed the deployment method settings in Heroku . I connected to Github, and set the deploy to automatic, so each push I make in gitpod to github would automatically push to heroku too.
 ``` 
-Deployment method		 GitHub
-                        Connected
-
+Deployment method		 GitHub Connected
 Automatic deploys from  master are enabled
 ``` 
 
@@ -371,7 +369,7 @@ After I had worked through my deployment snag list, I gave my app to the hardest
 ## Future Development
 
 I really enjoyed working on this project, testing out my new knowledge of python, flask, and working with databases. Due to time constraints I didn't get to add all the features I would have liked, but am noting them here for future reference, so I can update the website after assessment
- - User sign up and login
+ - User sign up, login features
  - More user control - a private user dashboard, with logged in sessions, to store records privately, to store favourites, and notes
  - Unique customized graphics
  - Options to add customized graphics to records, a selection from app, or the yuser can upload their own images.
@@ -383,12 +381,12 @@ I really enjoyed working on this project, testing out my new knowledge of python
  - Images copyright free from <a href="https://pixabay.com/" target="_blank">Pixabay</a>
  - Icons copyright free from Materialize 
  - Created using free accounts with Gitpod, Github, Heroku, MongoDB
-- [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/)Orla Breslin 2020
+- [![License: CC BY-SA 4.0](https://licensebuttons.net/l/by-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-sa/4.0/) Orla Breslin 2020
 
 ----
 ## Acknowledgements
  - Coding Tutorials:
-    - <a href="https://codeinstitute.net/" target="_blank">Code Institute</a>course materials
+    - <a href="https://codeinstitute.net/" target="_blank">Code Institute</a> course materials
  - Tadhg for his cruel but invaluable young teen user insight
 
 
