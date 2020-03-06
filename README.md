@@ -357,6 +357,7 @@ I had a number of small bugs to fix after deployment.
     - Refresh Chrome
     (answer found on <a href="https://stackoverflow.com/questions/44267503/devtools-failed-to-parse-sourcemap" target="_blank">StackOverflow</a>)
 - Styling Error: With concentration on the details and the functionality of the website, it’s easy to miss the more obvious mistakes. Working through the CRUD operations, I realised I had not added the uniform CSS styling to the ‘Edit Your Five’  and ‘Edit Categories’ pages.
+- Mobile navigation error - the links in the mobile navigation side pannel were not working. This was due to a z indexing error in the nav-wrapper class, which was set to 0. Once I deleted that styleing from the CSS stylesheet, the navbar worked fine.
 
 #### User Snag List:
 After I had worked through my deployment snag list, I gave my app to the hardest critic I could find, and one of my user stories -  a young teenage boy. He thought the idea was lame, but ultimately worked through the functions easily, and then laughed at the option of being able enter his own favourite facts. Something that made him smile (which was the ultimate goal of the app). Overall the app got approval of simplicity of ease, the ability to edit and delete was crucial, however I failed on a few items:

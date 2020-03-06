@@ -9,8 +9,7 @@ body {
 
 /** navbar **/
 .nav-wrapper {
-    position: absolute;
-    
+    position: absolute;   
 }
 
 #sidenav-overlay {
