@@ -10,11 +10,15 @@ body {
 /** navbar **/
 .nav-wrapper {
     position: absolute;
-    z-index: 0; 
+    
 }
 
 #sidenav-overlay {
    background-color: rgba(0,0,0,0.05);
+}
+
+#mobile-demo {
+    transform: translateX(-5% );
 }
 
 .brand-logo {
