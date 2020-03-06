@@ -85,7 +85,8 @@ _Style:_
  - Design - minimalist, clean design
  - Fonts - I used Google Fonts to personalize the text. 
  - Color Scheme - The color scheme is simple, and kept to a minimum to ensure full eligibility. 
-[add image of colour scheme]
+
+<img src="ux/five-colours.jpg" height="100" title="colour strip with 5 colours used in the app, white, light grey, orange, turquoise, china blue">
 
 _Structure, Skeleton & Surface:_
 Keeping the pyramid of interface success, 'user - utility- usability',  from my last project, and my user story in mind, simplicity and ease of use were the most important design elements, when creating the wireframe and mock up. Keeping images to a minimum, with simple explanations of how to use the site, with a very deliberate colour scheme and simple fonts. 
@@ -320,6 +321,20 @@ Deployment method		 GitHub
 
 Automatic deploys from  master are enabled
 ``` 
+
+#### Cloning this app
+If you would like to use this repository, you will need to clone it. Before you clone, however, you need to have your own Heroku database set up, with your database password at the ready, to create your own environmental variables file ready
+1. Make sure you have these installed
+    - node.js
+    - git
+2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) $ git clone CLONEURL
+3. CD to the folder cd FOLDERNAME
+4. Run $ npm install to install the project dependencies
+5. Run $ npm start to start live preview server
+6. Create new env.py file, add your database key and value
+7. Check to see if the .gitignore file contains the correct file path
+8. Use command line to initialize to your own repository
+
 
 #### Post Deployment Snag List:
 
