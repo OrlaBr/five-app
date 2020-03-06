@@ -281,12 +281,12 @@ In accordance to Flask formatting criteria, with specific named folders were cre
     - CSS folder with css stylesheet
     - Images folder with relevant images
  
-Once I had the basic structure of the app complete I deployed to Heroku.
+Github is a great resource for deploying web applications but as it only hosts static files it cannot be used to host a dynamic application, in this instance, with database functionality. 
+It is neccessary to deploy to a cloud platform that can display the project correctly. In this instance I used Heroku.
+Once I had the basic structure of the app complete I deployed to Heroku. This way, I could make sure any changes I made and viewed in Githpod could be successsfully transfered to public viewing in Heroku.
 
 ##### Heroku Deployment
 
-Github is a great resource for deploying web applications but as it only hosts static files it cannot be used to host a dynamic application, in this instance, with database functionality. 
-Heroku is being used to host the deployed dynamic site. 
 In order to deploy to Heroku, it is necessary to do a few actions.
 1. Create a requirments.txt file to ensure Heroku knows what programmes are being used. You can do this through the console log.
 ```  
@@ -305,12 +305,21 @@ heroku ps:scale web=1
 ```
 
 Heroku does not automatically detect the IP and PORT that are set in the python file, and must be manually included in the settings of Heroku. You do this by setting the keys and values in Config Vars
-``` Heroku
+``` 
+Heroku
 My app
 Settings
 Reveal Config Vars
 Set IP and PORT  
 ```
+
+I also changed the deployment method settings in Heroku . I connected to Github, and set the deploy to automatic, so each push I make in gitpod to github would automatically push to heroku too.
+``` 
+Deployment method		 GitHub
+                        Connected
+
+Automatic deploys from  master are enabled
+``` 
 
 #### Post Deployment Snag List:
 
