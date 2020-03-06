@@ -1,6 +1,7 @@
 
 # FIVE
 
+
 ‘FIVE’ is a wellness website/app focused on children and young teens that suffer from anxiety and stress. A much simpler format than current wellness apps, with the focus on the users own self-prescribed forms of ‘mindfulness’. Too many apps come with pre-prescribed ‘meditation’ routines that are an adults idea of what would be good for young teens, rather than creating an app that teens can use and edit themselves to suit their own personal needs.
 The principles behind the design are based on a simple ‘task manager app’, the user can input, edit, delete and personalise mindfulness routines that work. The inspiration for FIVE came from the 5 steps of a simple yet effective grounding exercise. Seeing many routies come in ‘5’ steps, 5 breaths, etc, I created FIVE as a simple app for young teens.
 The site was built using Gitpod, Github and Heroku. 
@@ -358,7 +359,7 @@ I had a number of small bugs to fix after deployment.
     (answer found on <a href="https://stackoverflow.com/questions/44267503/devtools-failed-to-parse-sourcemap" target="_blank">StackOverflow</a>)
 - Styling Error: With concentration on the details and the functionality of the website, it’s easy to miss the more obvious mistakes. Working through the CRUD operations, I realised I had not added the uniform CSS styling to the ‘Edit Your Five’  and ‘Edit Categories’ pages.
 - Mobile navigation error - the links in the mobile navigation side panel stopped working. This was due to a z indexing error in the nav-wrapper class, which was set to 0. Once I deleted that styling from the CSS stylesheet, the navbar worked fine.
-- 404 page - I have always wanted to create a customized 404 page. I began to build one, but due to time restraints, I decided to not go anead and delete the file. It wasnt necessary for this project, and I was running out of time, and couldnt afford any errors.
+- 404 page - I have always wanted to create a customized 404 page. I began to build one, but due to time restraints, I decided to not go ahead and delete the file. It wasn't necessary for this project, and I was running out of time, and couldn't afford any errors.
 
 
 #### User Snag List:
