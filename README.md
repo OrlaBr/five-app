@@ -62,7 +62,7 @@ Practical use of the app. The user:
  
 _For the Developer:_
 
-As a developer, I wanted to create a fully responsive app, using CRUD operations manipulate data, to get, post and store information from a database
+As a developer, I wanted to create a fully responsive app, following MVP principles (minimum viable product), using CRUD operations manipulate data, to get, post and store information from a database
  - This website would help me practice my new coding skills, develop logic and understanding of data centric application.
  - Development of coding skills using programming languages, frameworks and databases, to ways to create a website that is simple, extremely user friendly, with easy navigation, and yet capable of being a useful function website. To misquote the king of design himself, William Morris
 
@@ -360,7 +360,7 @@ I had a number of small bugs to fix after deployment.
 - Mobile navigation error - the links in the mobile navigation side panel stopped working. This was due to a z indexing error in the nav-wrapper class, which was set to 0. Once I deleted that styling from the CSS stylesheet, the navbar worked fine.
 
 #### User Snag List:
-After I had worked through my deployment snag list, I gave my app to the hardest critic I could find, and one of my user stories -  a young teenage boy. He thought the idea was lame, but ultimately worked through the functions easily, and then laughed at the option of being able enter his own favourite facts. Something that made him smile (which was the ultimate goal of the app). Overall the app got approval of simplicity of ease, the ability to edit and delete was crucial, however I failed on a few items:
+After I had worked through my deployment snag list, I gave my app to the hardest critic I could find, and one of my user stories -  a young teenage boy. He thought the idea was lame, but ultimately worked through the functions easily, and then laughed at the option of being able enter his own favourite facts. (Something that made him smile, which was the ultimate goal of the app). Overall the app got approval of simplicity of ease, the ability to edit and delete was crucial, however I failed on a few items:
  - The  images I used on the main page were too childish. After  negative feedback about the type of imagery to use, I settled on calming natural pictures that could appeal to any age: simple images from nature
  - I had named the pages after the type of content it contained or in relation to the app, of what I would ultimately like, eg’ Our 5’, ‘My 5’, however this caused some confusion to a young user, so I renamed the navigation with simpier ‘view all’, ‘add new’ 
 
